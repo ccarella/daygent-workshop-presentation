@@ -1,0 +1,14 @@
+/* Global styles for Slidev presentation */
+
+/* Add page numbers to all slides except the first one */
+.slidev-page:not([data-slidev-no="1"]):not([style*="display: none"])::after {
+  content: attr(data-slidev-no);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+  z-index: 100;
+  pointer-events: none;
+}

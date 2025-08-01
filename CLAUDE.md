@@ -38,3 +38,4 @@ npm run export  # Export slides to PDF or other formats
 - Slides support MDC syntax, transitions, and drawings
 - The presentation uses the `seriph` theme with slide transitions
 - Components can be directly embedded in markdown slides
+- Optimized for 1920x1080 resolution (Full HD) with 16:9 aspect ratio for Zoom presentations
