@@ -118,22 +118,21 @@ Today we are going to build an app with Claude Code.
 
 ---
 
-<div class="section-label">STRATEGIC CONTEXT</div>
+<div class="section-label">MY STORY</div>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem;">
-  <div>
-    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">The Challenge</h2>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
-      AI digital transformation initiatives fail because they're top-down. While leadership invests in AI strategy, the gap between vision and implementation widens. Tools like Lovable and V0 create demos, not production systems.
-    </p>
-  </div>
-  
-  <div>
-    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Our Approach</h2>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
-      We transform leaders into hands-on practitioners. Through intensive, practical training, participants master production AI development—bridging strategy and execution with real, deployable solutions.
-    </p>
-  </div>
+<h1 style="font-size: 3rem; margin-bottom: 2.5rem;">
+The Developers are way ahead.
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+I've been building with AI development tools since the beginning of the year. As I mastered these tools, I realized something striking: I was the only non-technical person in every developer chat and community I joined.
+</p>
+
+<div style="border-left: 3px solid #000; padding-left: 2rem; margin-top: 3rem;">
+  <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">Key Learning</h3>
+  <p style="font-size: 1.125rem; line-height: 1.7; color: #333;">
+    Product development with AI agents still needs to be product managed. The tools are powerful, but without product thinking, they just build faster solutions to the wrong problems.
+  </p>
 </div>
 
 ---
