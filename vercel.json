@@ -1,0 +1,9 @@
+{
+  "framework": null,
+  "buildCommand": "cd 8-4-25 && npm install && npm run build",
+  "outputDirectory": "8-4-25/dist",
+  "installCommand": "cd 8-4-25 && npm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

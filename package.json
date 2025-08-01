@@ -1,0 +1,16 @@
+{
+  "name": "daygent-workshop-presentation",
+  "version": "1.0.0",
+  "description": "Agentic Coding for Product Managers Workshop Presentation",
+  "scripts": {
+    "dev": "cd 8-4-25 && npm run dev",
+    "build": "cd 8-4-25 && npm run build",
+    "preview": "cd 8-4-25 && npm run preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccarella/daygent-workshop-presentation.git"
+  },
+  "author": "",
+  "license": "MIT"
+}
