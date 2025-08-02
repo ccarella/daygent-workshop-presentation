@@ -1379,3 +1379,297 @@ Let's Try It: Git Workflow
 
 ---
 
+---
+transition: slide-left
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Visual Context: Images in Claude Code
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Why Images Matter</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Show, don't tell. A screenshot can convey UI state, errors, or design intent faster than paragraphs of description.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Closing the Feedback Loop</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Build → Screenshot → Iterate. Visual feedback helps Claude understand exactly what needs adjustment.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Context Efficiency</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      One image can replace hundreds of tokens of description—crucial for preserving context window space.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Three Ways to Add Images
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">🖱️ Drag & Drop (macOS)</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        Simply drag image files from Finder directly into your terminal window.
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">📸 Screenshot & Paste</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Shift+Cmd+Ctrl+4</code> to capture, then <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Ctrl+V</code> to paste into Claude Code.
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">📁 Reference Files</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        Tell Claude to read existing image files: "Look at ./mockup.png and build this interface"
+      </p>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.25rem; text-align: center; margin: 0;">
+    <strong>Pro Tip:</strong> macOS screenshot to clipboard is the fastest workflow
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Powerful Use Cases
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🎨 Mockup to Code</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Upload a design mockup and ask Claude to implement it. Works with hand-drawn sketches too!
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🐛 Visual Debugging</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Screenshot errors, layout issues, or unexpected behavior—Claude can see and fix them.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔄 Iterative Refinement</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Build → Screenshot → "Move button left" → Screenshot → "Make it blue" → Perfect!
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📊 Data Extraction</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Upload charts, tables, or diagrams—Claude can extract data or recreate them in code.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🎯 Style Matching</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      "Make my app look like this screenshot"—Claude matches colors, fonts, and layouts.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📱 Responsive Testing</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Share mobile/tablet screenshots to fix responsive design issues across devices.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Live Demo: Screenshot Workflow
+</h1>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Build Something</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        Ask Claude to create a simple UI component or page
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Capture Screenshot</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Shift+Cmd+Ctrl+4</code> - Select area to capture to clipboard
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Paste into Claude Code</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Ctrl+V</code> - Image appears in terminal
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">4</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Request Changes</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        "Make the header blue and add more spacing between buttons"
+      </p>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.1rem; color: #2563eb; font-weight: 500; margin: 0;">
+    Let's try it together! Build → Screenshot → Iterate
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Advanced: Automated Screenshots
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 1rem;">🤖 Puppeteer MCP Server</h3>
+  <p style="font-size: 1.125rem; line-height: 1.7;">
+    Automate browser interactions and capture screenshots programmatically—perfect for testing flows and documenting UI states.
+  </p>
+</div>
+
+<div style="display: grid; gap: 1.5rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Automated Testing:</strong> Capture screenshots at each step of user flows
+    </p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Visual Regression:</strong> Compare screenshots across builds to catch UI changes
+    </p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      <strong>Documentation:</strong> Auto-generate visual docs by screenshotting all pages
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.1rem; margin: 0;">
+    <code>npm install @modelcontextprotocol/server-puppeteer</code>
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MULTIMODAL INPUT</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Best Practices & Tips
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">📐 Crop Thoughtfully</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      Focus on the relevant UI area—Claude performs better with clear, focused images.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">💬 Add Context</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      "Here's the current state. Please fix the alignment of the nav items."
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">🔄 Multiple Views</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      Share desktop + mobile views together for responsive fixes.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">🎯 Annotate</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      Use Preview.app to add arrows or circles before uploading.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">📊 Token Awareness</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      Images use ~1,600 tokens. Use wisely in long conversations.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">🚀 Quick Iteration</h3>
+    <p style="font-size: 0.95rem; line-height: 1.5;">
+      Keep browser and terminal side-by-side for rapid feedback loops.
+    </p>
+  </div>
+</div>
+
+---
