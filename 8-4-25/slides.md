@@ -687,3 +687,434 @@ Our Role in Context Engineering
   </div>
 </div>
 
+---
+transition: slide-left
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+From Code to Production
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+Claude Code doesn't just write code—it manages your entire development workflow. From Git commits to pull requests to production deployment.
+</p>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📝</div>
+    <h3 style="margin-bottom: 0.5rem;">Write Code</h3>
+    <p style="font-size: 0.95rem; color: #666;">Claude Code writes, tests, and iterates</p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔄</div>
+    <h3 style="margin-bottom: 0.5rem;">Review & Commit</h3>
+    <p style="font-size: 0.95rem; color: #666;">Automated Git workflow with meaningful messages</p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🚀</div>
+    <h3 style="margin-bottom: 0.5rem;">Deploy</h3>
+    <p style="font-size: 0.95rem; color: #666;">Push to Vercel for instant deployment</p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Git Integration: How Claude Code Works
+</h1>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Full Git Awareness</h3>
+      <p style="color: #666; font-size: 1.05rem;">Reads current branch, status, diffs, and history—knows exactly where you are</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Smart Staging</h3>
+      <p style="color: #666; font-size: 1.05rem;">Automatically stages relevant files, avoiding noise and keeping commits clean</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Contextual Commits</h3>
+      <p style="color: #666; font-size: 1.05rem;">Writes commit messages that explain "why" not just "what"—following repo conventions</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">4</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">PR Ready</h3>
+      <p style="color: #666; font-size: 1.05rem;">Creates pull requests with summaries and test plans using GitHub CLI</p>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.1rem; margin: 0;">
+    <strong>Pro tip:</strong> Claude Code reads your git log to match your team's commit style
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+The Claude Code Commit Flow
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">
+    Ask Claude Code to commit your changes:
+  </p>
+  
+  <code style="background: #000; color: #fff; padding: 1rem 1.5rem; border-radius: 8px; display: block; font-size: 1.1rem;">
+    "Please commit these changes"
+  </code>
+</div>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 2rem;">
+  <div v-click style="display: flex; align-items: center; gap: 1rem;">
+    <span style="background: #10b981; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem;">Runs <code style="background: #f3f4f6; padding: 0.2rem 0.5rem; border-radius: 4px;">git status</code> to see untracked files</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem;">
+    <span style="background: #10b981; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem;">Shows <code style="background: #f3f4f6; padding: 0.2rem 0.5rem; border-radius: 4px;">git diff</code> for staged and unstaged changes</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem;">
+    <span style="background: #10b981; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem;">Reviews <code style="background: #f3f4f6; padding: 0.2rem 0.5rem; border-radius: 4px;">git log</code> to match commit style</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem;">
+    <span style="background: #10b981; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem;">Stages relevant files with <code style="background: #f3f4f6; padding: 0.2rem 0.5rem; border-radius: 4px;">git add</code></p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem;">
+    <span style="background: #10b981; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</span>
+    <p style="font-size: 1.05rem;">Commits with descriptive message + Claude signature</p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Managing Mistakes: The Revert Strategy
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+When Claude Code goes down the wrong path, don't try to fix it—start fresh.
+</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: #fee2e2; padding: 1.75rem; border-radius: 8px; border-left: 3px solid #ef4444;">
+    <h3 style="margin-bottom: 0.75rem; color: #dc2626;">❌ Don't Do This</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.6; list-style: none; padding: 0;">
+      <li style="margin-bottom: 0.5rem;">• Keep adding fix after fix</li>
+      <li style="margin-bottom: 0.5rem;">• Let the context get cluttered</li>
+      <li>• Try to debug Claude's mistakes</li>
+    </ul>
+  </div>
+  
+  <div v-click style="background: #dcfce7; padding: 1.75rem; border-radius: 8px; border-left: 3px solid #22c55e;">
+    <h3 style="margin-bottom: 0.75rem; color: #16a34a;">✅ Do This Instead</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.6; list-style: none; padding: 0;">
+      <li style="margin-bottom: 0.5rem;">• Exit Claude Code (Ctrl+C)</li>
+      <li style="margin-bottom: 0.5rem;">• <code style="background: #f3f4f6; padding: 0.2rem 0.4rem; border-radius: 3px;">git reset --hard HEAD</code></li>
+      <li>• Start fresh with clearer instructions</li>
+    </ul>
+  </div>
+</div>
+
+<div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+  <h3 style="margin-bottom: 0.75rem;">🎯 Key Insight</h3>
+  <p style="font-size: 1.1rem; line-height: 1.7;">
+    Fresh context = better results. Claude Code performs best when it starts with a clear goal and clean slate.
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Pull Request Magic
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <p style="font-size: 1.1rem; color: #666; margin-bottom: 1.5rem;">
+    Turn your work into a reviewable PR:
+  </p>
+  
+  <code style="background: #000; color: #fff; padding: 1rem 1.5rem; border-radius: 8px; display: block; font-size: 1.1rem;">
+    "Create a pull request for these changes"
+  </code>
+</div>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔍</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Analyzes All Changes</h3>
+      <p style="color: #666; font-size: 1.05rem;">Reviews entire branch history, not just latest commit</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📝</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Writes PR Description</h3>
+      <p style="color: #666; font-size: 1.05rem;">Creates summary with bullet points and test plan</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🚀</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Pushes & Creates PR</h3>
+      <p style="color: #666; font-size: 1.05rem;">Uses GitHub CLI to create PR and returns the URL</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Enter Vercel: Deploy in Seconds
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+Your PR isn't just code—it's a live preview. Vercel gives every branch its own URL.
+</p>
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; margin-right: 0.75rem;">1</span>
+      Connect Repository
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6; color: #666;">
+      Link your GitHub repo to Vercel once—it watches every push
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; margin-right: 0.75rem;">2</span>
+      Automatic Previews
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6; color: #666;">
+      Every PR gets a unique URL for testing before merge
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; margin-right: 0.75rem;">3</span>
+      Production on Merge
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6; color: #666;">
+      Merge to main = instant production deployment
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; margin-right: 0.75rem;">4</span>
+      Zero Config
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6; color: #666;">
+      Framework detection + optimized builds out of the box
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+The Complete Workflow
+</h1>
+
+<div style="position: relative; margin-top: 3rem;">
+  <!-- Flow diagram -->
+  <div style="display: flex; align-items: center; justify-content: space-between; max-width: 900px; margin: 0 auto;">
+    <div v-click style="text-align: center;">
+      <div style="background: #2563eb; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
+        💡
+      </div>
+      <h3>Idea</h3>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Product thinking</p>
+    </div>
+    
+    <div v-click style="font-size: 2rem; color: #2563eb;">→</div>
+    
+    <div v-click style="text-align: center;">
+      <div style="background: #2563eb; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
+        🤖
+      </div>
+      <h3>Claude Code</h3>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Writes & tests</p>
+    </div>
+    
+    <div v-click style="font-size: 2rem; color: #2563eb;">→</div>
+    
+    <div v-click style="text-align: center;">
+      <div style="background: #2563eb; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
+        📝
+      </div>
+      <h3>Git Commit</h3>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Version control</p>
+    </div>
+    
+    <div v-click style="font-size: 2rem; color: #2563eb;">→</div>
+    
+    <div v-click style="text-align: center;">
+      <div style="background: #2563eb; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
+        🔄
+      </div>
+      <h3>Pull Request</h3>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Code review</p>
+    </div>
+    
+    <div v-click style="font-size: 2rem; color: #2563eb;">→</div>
+    
+    <div v-click style="text-align: center;">
+      <div style="background: #10b981; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem;">
+        🚀
+      </div>
+      <h3>Vercel</h3>
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">Live preview</p>
+    </div>
+  </div>
+  
+  <div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+    <p style="font-size: 1.25rem; margin: 0;">
+      <strong>From idea to production URL in minutes, not days</strong>
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">VERSION CONTROL & WORKFLOW</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Tips for Success
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">🎯 Be Specific with Commits</h3>
+    <p style="font-size: 1.1rem; line-height: 1.7;">
+      Tell Claude Code what kind of changes you made: "Commit the styling improvements" vs just "commit"
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">🔄 Commit Often</h3>
+    <p style="font-size: 1.1rem; line-height: 1.7;">
+      After each meaningful change—it's easier to revert a small commit than untangle a large one
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">📋 Review Before PR</h3>
+    <p style="font-size: 1.1rem; line-height: 1.7;">
+      Ask Claude Code to show you the full diff before creating a PR: "Show me all changes in this branch"
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">🚀 Use Preview URLs</h3>
+    <p style="font-size: 1.1rem; line-height: 1.7;">
+      Share Vercel preview links for feedback before merging—catch issues early
+    </p>
+  </div>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">HANDS-ON PRACTICE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Let's Try It: Git Workflow
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <h3 style="margin-bottom: 1rem;">Exercise: Complete Development Cycle</h3>
+  
+  <div style="display: grid; gap: 1.25rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <input type="checkbox" style="width: 20px; height: 20px;">
+      <p style="font-size: 1.1rem; margin: 0;">Make a meaningful change to your project</p>
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <input type="checkbox" style="width: 20px; height: 20px;">
+      <p style="font-size: 1.1rem; margin: 0;">Ask Claude Code to commit with a descriptive message</p>
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <input type="checkbox" style="width: 20px; height: 20px;">
+      <p style="font-size: 1.1rem; margin: 0;">Create a pull request</p>
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <input type="checkbox" style="width: 20px; height: 20px;">
+      <p style="font-size: 1.1rem; margin: 0;">View your Vercel preview URL</p>
+    </div>
+  </div>
+</div>
+
+<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+  <h3 style="margin-bottom: 0.75rem;">💡 What to Try</h3>
+  <ul style="font-size: 1.05rem; line-height: 1.7; list-style: none; padding: 0;">
+    <li style="margin-bottom: 0.5rem;">• Add a new feature to your app</li>
+    <li style="margin-bottom: 0.5rem;">• Fix a styling issue</li>
+    <li style="margin-bottom: 0.5rem;">• Improve the user experience</li>
+    <li>• Add helpful documentation</li>
+  </ul>
+</div>
+
+---
+
