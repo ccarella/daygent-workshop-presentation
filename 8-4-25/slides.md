@@ -376,6 +376,88 @@ Let's get started.
 transition: slide-left
 ---
 
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What is Claude Code?
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+An agentic coding tool that operates directly in your terminal—understanding your project, taking real actions, and integrating with your existing workflow.
+</p>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 3rem;">
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🛠</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Terminal Native</h3>
+      <p style="color: #666;">Works in your terminal, integrates with VS Code, JetBrains, Git, Docker</p>
+    </div>
+  </div>
+  
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🤖</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Truly Agentic</h3>
+      <p style="color: #666;">Multi-step processing, coordinated file changes, runs tests, manages Git workflows</p>
+    </div>
+  </div>
+  
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🎯</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Control & Transparency</h3>
+      <p style="color: #666;">Explicit approval for changes, visible progress tracking, interruptible at any point</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Beyond Copy-Paste Coding
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div>
+    <h3 style="margin-bottom: 1rem; color: #999;">Traditional AI Tools</h3>
+    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #999;">
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="margin-bottom: 0.75rem;">📝 Generate code snippets</li>
+        <li style="margin-bottom: 0.75rem;">✂️ Copy-paste workflow</li>
+        <li style="margin-bottom: 0.75rem;">🏢 IDE-specific</li>
+        <li>💭 Single-step responses</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div>
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code</h3>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="margin-bottom: 0.75rem;">🔨 Takes direct actions</li>
+        <li style="margin-bottom: 0.75rem;">🔄 Full workflow automation</li>
+        <li style="margin-bottom: 0.75rem;">🌍 Environment agnostic</li>
+        <li>🧠 Multi-step reasoning</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+  <p style="font-size: 1.1rem; margin: 0;">
+    <strong>Key Insight:</strong> Claude Code doesn't just suggest—it implements, tests, and iterates
+  </p>
+</div>
+
+---
+transition: slide-left
+---
+
 <div class="section-label">HANDS-ON DEMO</div>
 
 <h1 style="margin-bottom: 2rem;">
