@@ -556,35 +556,31 @@ transition: fade
 Why It Matters (Especially for Agents)
 </h1>
 
-<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #ef4444; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">!</span>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+    <span style="background: #ef4444; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">!</span>
+    <p style="font-size: 1.125rem; line-height: 1.7; margin: 0;">
       Agents juggle chat history, tool traces, code, and docs—token usage explodes fast.
     </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #f59e0b; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">⚠</span>
-    <div>
-      <p style="font-size: 1.125rem; line-height: 1.7; margin-bottom: 0.5rem;">
-        <strong>Too much context →</strong> higher cost/latency, dilution ("lost in the middle"), conflicts.
-      </p>
-    </div>
+  <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+    <span style="background: #f59e0b; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚠</span>
+    <p style="font-size: 1.125rem; line-height: 1.7; margin: 0;">
+      <strong>Too much context →</strong> higher cost/latency, dilution ("lost in the middle"), conflicts.
+    </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #f59e0b; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">⚠</span>
-    <div>
-      <p style="font-size: 1.125rem; line-height: 1.7;">
-        <strong>Too little context →</strong> missing facts, brittle behavior, repeated questions.
-      </p>
-    </div>
+  <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+    <span style="background: #f59e0b; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚠</span>
+    <p style="font-size: 1.125rem; line-height: 1.7; margin: 0;">
+      <strong>Too little context →</strong> missing facts, brittle behavior, repeated questions.
+    </p>
   </div>
   
-  <div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 1rem;">
-    <p style="font-size: 1.25rem; text-align: center; margin: 0;">
-      <strong>Goal:</strong> Right info, right order, right size.
+  <div v-click style="background: #2563eb; color: #fff; padding: 2rem; border-radius: 12px; margin-top: 2rem; text-align: center;">
+    <p style="font-size: 1.375rem; font-weight: 600; margin: 0; letter-spacing: 0.025em;">
+      Goal: Right info, right order, right size.
     </p>
   </div>
 </div>
