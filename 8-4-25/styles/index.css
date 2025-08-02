@@ -1,5 +1,567 @@
 /* Global styles for Slidev presentation */
 
+/* ===== Workshop Design System ===== */
+
+/* Remove inline warning styles */
+.remove-margin p:last-child {
+  margin-bottom: 0;
+}
+
+/* Workshop-specific Components */
+.workshop-step {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #2563eb;
+  margin-bottom: 1.5rem;
+}
+
+.workshop-checkpoint {
+  background: #fef3c7;
+  border: 2px solid #f59e0b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+/* Success Indicators */
+.success-indicator {
+  color: #10b981;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.success-indicator::before {
+  content: '✓';
+  background: #10b981;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Error States */
+.error-indicator {
+  color: #dc2626;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error-indicator::before {
+  content: '✗';
+  background: #ef4444;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Code Blocks - Workshop Style */
+.workshop-code {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+  font-size: 1.125rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.workshop-code-inline {
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Follow Along Sections */
+.follow-along {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.follow-along h3 {
+  color: #22c55e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.follow-along-command {
+  font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid #22c55e;
+}
+
+/* Interactive Checkbox Lists */
+.workshop-checklist {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.workshop-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.workshop-checklist-item:last-child {
+  margin-bottom: 0;
+}
+
+.workshop-checklist-item input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Tips and Info Boxes */
+.workshop-tip {
+  background: #fef3c7;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.workshop-tip::before {
+  content: '💡';
+  font-size: 1.25rem;
+}
+
+/* Section Progress Indicators */
+.section-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-progress-item {
+  background: #e5e7eb;
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.section-progress-item.active {
+  background: #2563eb;
+}
+
+.section-progress-item.completed {
+  background: #10b981;
+}
+
+/* Terminal Output Styles */
+.terminal-output {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+  margin: 1rem 0;
+}
+
+.terminal-prompt {
+  color: #22c55e;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-comment {
+  color: #888;
+  font-style: italic;
+}
+
+/* Workshop Cards */
+.workshop-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Step Numbers */
+.step-number {
+  background: #2563eb;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Feature Cards Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Key Learning Sections */
+.key-learning {
+  border-left: 3px solid #2563eb;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+.key-learning h3 {
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+}
+
+/* Hero Sections */
+.hero-section {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Alert Boxes */
+.alert-warning {
+  background: #fee2e2;
+  border: 2px solid #ef4444;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.alert-success {
+  background: #dcfce7;
+  border: 2px solid #22c55e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+/* Workflow Diagrams */
+.workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.workflow-arrow {
+  font-size: 2rem;
+  color: #2563eb;
+  margin: 0 1rem;
+}
+
+/* Exercise Boxes */
+.exercise-box {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid #2563eb;
+  margin: 2rem 0;
+}
+
+.exercise-box h3 {
+  color: #2563eb;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+/* Time Estimates */
+.time-estimate {
+  background: #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Simplified Hero Title */
+.hero-title-simple {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background: #10b981;
+  color: white;
+}
+
+.btn-disabled {
+  background: #6b7280;
+  color: white;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* List Styles */
+.list-clean {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-spaced li {
+  margin-bottom: 0.75rem;
+}
+
+.list-spaced li:last-child {
+  margin-bottom: 0;
+}
+
+.list-large {
+  line-height: 1.8;
+}
+
+/* Typography Weights */
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* Special Backgrounds */
+.bg-primary {
+  background: #2563eb;
+  color: white;
+}
+
+/* List Indentation */
+.list-indent {
+  padding-left: 1.5rem;
+}
+
+/* Margin Utilities */
+.m-0 { margin: 0; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* Flex Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gap-1 { gap: 0.5rem; }
+.gap-2 { gap: 1rem; }
+.gap-3 { gap: 1.5rem; }
+.gap-4 { gap: 2rem; }
+
+/* Focus States for Accessibility */
+*:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+input[type="checkbox"]:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 0;
+}
+
+/* Link Styles */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Code Inline Improvements */
+code {
+  font-family: 'Fira Code', Monaco, 'Courier New', monospace;
+}
+
+/* Slide-specific Backgrounds */
+.slide-dark {
+  background-color: #1a1a1a !important;
+  color: white;
+}
+
+.slide-accent {
+  background-color: #2563eb !important;
+  color: white;
+}
+
+/* Typography Utilities */
+.text-large {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.text-medium {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.text-success {
+  color: #10b981;
+}
+
+.text-warning {
+  color: #f59e0b;
+}
+
+.text-error {
+  color: #ef4444;
+}
+
+/* Spacing Utilities */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+/* Container Utilities */
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container-medium {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-full {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Components */
+.setup-section {
+  padding: 2rem 0;
+}
+
+.demo-section {
+  padding: 2rem 0;
+}
+
+.concept-section {
+  padding: 2rem 0;
+}
+
+.hands-on-section {
+  padding: 2rem 0;
+}
+
+/* Grid Utilities */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Add page numbers to all slides except the first one */
 .slidev-page:not([data-slidev-no="1"]):not([style*="display: none"])::after {
   content: attr(data-slidev-no);
