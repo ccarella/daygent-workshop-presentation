@@ -687,3 +687,203 @@ Our Role in Context Engineering
   </div>
 </div>
 
+---
+transition: slide-left
+---
+
+<div class="section-label">COMPARISON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Claude Code vs. Other Tools
+</h1>
+
+<div style="margin-top: 3rem;">
+  <p style="font-size: 1.25rem; line-height: 1.7; margin-bottom: 2rem;">
+    Understanding where Claude Code fits in the AI development landscape helps you choose the right tool for your workflow.
+  </p>
+  
+  <div style="display: grid; gap: 1.5rem;">
+    <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+      <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🖥️</span>
+      <p style="font-size: 1.125rem;">Works in your existing terminal environment</p>
+    </div>
+    
+    <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+      <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🤖</span>
+      <p style="font-size: 1.125rem;">Built for autonomous, multi-step tasks</p>
+    </div>
+    
+    <div v-click style="display: flex; align-items: center; gap: 1.5rem;">
+      <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">💰</span>
+      <p style="font-size: 1.125rem;">Direct access to Anthropic models = better value</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">COMPARISON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+CLI vs. IDE/Web UI
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code (CLI)</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.8; color: #666;">
+      <li>Terminal-based workflow</li>
+      <li>Integrates with existing tools</li>
+      <li>No context switching</li>
+      <li>Scriptable & automatable</li>
+      <li>Works over SSH</li>
+    </ul>
+  </div>
+  
+  <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">IDE/Web Tools</h3>
+    <p style="font-size: 0.9rem; color: #888; margin-bottom: 0.75rem;">(Cursor, Windsurf, Copilot, Devin)</p>
+    <ul style="font-size: 1.05rem; line-height: 1.8; color: #666;">
+      <li>Visual interfaces</li>
+      <li>IDE integration</li>
+      <li>Point-and-click interactions</li>
+      <li>May require specific editors</li>
+      <li>Often proprietary ecosystems</li>
+    </ul>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.125rem; text-align: center; margin: 0;">
+    <strong>Key Insight:</strong> Claude Code offers flexibility for developers who live in the terminal
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">COMPARISON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Agentic Focus
+</h1>
+
+<div style="margin-top: 3rem;">
+  <div style="display: grid; gap: 2rem;">
+    <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #2563eb;">
+      <h3 style="margin-bottom: 0.75rem;">Claude Code: Built for Doing</h3>
+      <ul style="font-size: 1.05rem; line-height: 1.8; color: #666;">
+        <li>Multi-step task processing</li>
+        <li>Long-running operations</li>
+        <li>Autonomous decision-making</li>
+        <li>Complete implementations</li>
+      </ul>
+    </div>
+    
+    <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #666;">
+      <h3 style="margin-bottom: 0.75rem;">Chat Assistants: Built for Talking</h3>
+      <p style="font-size: 0.9rem; color: #888; margin-bottom: 0.75rem;">(ChatGPT, Claude.ai)</p>
+      <ul style="font-size: 1.05rem; line-height: 1.8; color: #666;">
+        <li>Conversational interfaces</li>
+        <li>Q&A focused</li>
+        <li>Manual copy-paste workflow</li>
+        <li>Limited file system access</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div v-click style="background: #2563eb; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+    <p style="font-size: 1.25rem; text-align: center; margin: 0;">
+      Claude Code doesn't just suggest code—it implements it
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">COMPARISON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Codebase Understanding
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click>
+    <h3 style="margin-bottom: 1rem;">How Claude Code Searches</h3>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+      <ul style="font-size: 1.05rem; line-height: 1.8;">
+        <li><strong>Agentic search:</strong> Uses grep, find, and intelligent exploration</li>
+        <li><strong>On-demand:</strong> Searches only what's needed for the task</li>
+        <li><strong>Efficient:</strong> No pre-indexing or caching required</li>
+        <li><strong>Flexible:</strong> Adapts search strategy based on findings</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div v-click>
+    <h3 style="margin-bottom: 1rem;">Other Approaches</h3>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+      <ul style="font-size: 1.05rem; line-height: 1.8; color: #666;">
+        <li><strong>Semantic indexing:</strong> Pre-processes entire codebase</li>
+        <li><strong>Vector embeddings:</strong> Creates searchable representations</li>
+        <li><strong>Static analysis:</strong> Parses code structure upfront</li>
+        <li><strong>Trade-off:</strong> Setup time vs. search speed</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">COMPARISON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Cost Efficiency
+</h1>
+
+<div style="margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">Direct Anthropic Access</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      As an Anthropic product, Claude Code connects directly to Opus 4 and Sonnet 4 models without reseller markups.
+    </p>
+  </div>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+    <div v-click style="background: #2563eb; color: #fff; padding: 1.5rem; border-radius: 8px;">
+      <h4 style="margin-bottom: 0.75rem;">Claude Code</h4>
+      <ul style="font-size: 0.95rem; line-height: 1.6;">
+        <li>Pay Anthropic directly</li>
+        <li>Optimized for their models</li>
+        <li>Efficient token usage</li>
+        <li>No middleware costs</li>
+      </ul>
+    </div>
+    
+    <div v-click style="background: #666; color: #fff; padding: 1.5rem; border-radius: 8px;">
+      <h4 style="margin-bottom: 0.75rem;">Third-party Tools</h4>
+      <ul style="font-size: 0.95rem; line-height: 1.6;">
+        <li>Reseller pricing</li>
+        <li>Multiple model providers</li>
+        <li>Platform fees</li>
+        <li>Usage limits</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div v-click style="margin-top: 2rem; text-align: center;">
+    <p style="font-size: 1.25rem; color: #2563eb; font-weight: 500;">
+      Better performance + lower cost = superior value
+    </p>
+  </div>
+</div>
+
+---
+
