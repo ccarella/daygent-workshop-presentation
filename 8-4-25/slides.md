@@ -687,3 +687,335 @@ Our Role in Context Engineering
   </div>
 </div>
 
+---
+transition: fade
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Strategic Interaction with Claude Code
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; margin-top: 3rem;">
+  <p style="font-size: 1.4rem; line-height: 1.8; text-align: center; color: #333;">
+    Master the art of working with AI coding assistants through proven workflows and best practices
+  </p>
+</div>
+
+<div v-click style="margin-top: 3rem; text-align: center;">
+  <p style="font-size: 1.2rem; color: #666;">
+    Transform your development process from reactive to strategic
+  </p>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+The EPE Workflow
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <h2 style="text-align: center; color: #2563eb; margin-bottom: 1rem;">Explore → Plan → Execute</h2>
+  <p style="font-size: 1.1rem; text-align: center; color: #666;">Save time by verifying your approach before implementation</p>
+</div>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 2rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem; background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <span style="background: #2563eb; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">E</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Explore the Codebase</h3>
+      <p style="color: #666; font-size: 1.05rem;">Let Claude understand your project structure, dependencies, and patterns before making changes.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem; background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <span style="background: #2563eb; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">P</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Plan the Task</h3>
+      <p style="color: #666; font-size: 1.05rem;">Ask Claude to outline the implementation strategy. Review and refine before proceeding.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem; background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <span style="background: #2563eb; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">E</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Execute with Confidence</h3>
+      <p style="color: #666; font-size: 1.05rem;">Implement the verified plan, knowing the approach is sound and aligned with your codebase.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Core Best Practices
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🎯 Be Specific</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Clear, detailed instructions lead to better results
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔄 Iterative Development</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Leverage Claude's ability to refine and improve
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🦆 Rubber Duck Debugging</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Use Claude as a thought partner for complex problems
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">💾 Commit Regularly</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Version control saves time and enables easy rollback
+    </p>
+  </div>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Be Specific: The Power of Precision
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+  <div style="background: rgba(255, 125, 125, 0.2); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #ef4444;">
+    <h3 style="margin-bottom: 1rem; color: #dc2626;">❌ Vague Request</h3>
+    <pre style="background: rgba(0, 0, 0, 0.05); padding: 1rem; border-radius: 4px; font-size: 0.9rem; overflow-x: auto;">
+"Add a button to the page"</pre>
+    <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+      Unclear location, purpose, and behavior
+    </p>
+  </div>
+  
+  <div style="background: rgba(125, 255, 125, 0.2); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #10b981;">
+    <h3 style="margin-bottom: 1rem; color: #059669;">✅ Specific Request</h3>
+    <pre style="background: rgba(0, 0, 0, 0.05); padding: 1rem; border-radius: 4px; font-size: 0.9rem; overflow-x: auto;">
+"Add a blue 'Export PDF' button to the 
+top-right of the dashboard that triggers 
+the exportToPDF() function when clicked"</pre>
+    <p style="font-size: 0.95rem; color: #666; margin-top: 1rem;">
+      Clear location, purpose, style, and behavior
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+  <h3 style="margin-bottom: 1rem;">Key Elements of Specificity:</h3>
+  <ul style="font-size: 1.1rem; line-height: 1.8;">
+    <li><strong>What:</strong> Exact feature or change needed</li>
+    <li><strong>Where:</strong> Specific file, component, or location</li>
+    <li><strong>How:</strong> Expected behavior and interactions</li>
+    <li><strong>Why:</strong> Context and goal (when relevant)</li>
+  </ul>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Iterative Development with Feedback
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <p style="font-size: 1.2rem; text-align: center; color: #333;">
+    Claude Code excels at refining solutions when given clear feedback mechanisms
+  </p>
+</div>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 2rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Unit Tests</h3>
+      <p style="color: #666; font-size: 1.05rem;">Write tests first, let Claude implement until they pass</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Screenshots</h3>
+      <p style="color: #666; font-size: 1.05rem;">Share UI screenshots for visual refinements</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Error Messages</h3>
+      <p style="color: #666; font-size: 1.05rem;">Copy full error output for targeted fixes</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">4</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Performance Metrics</h3>
+      <p style="color: #666; font-size: 1.05rem;">Share benchmarks for optimization tasks</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Rubber Duck Debugging with AI
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+  <div>
+    <div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 8px;">
+      <h3 style="margin-bottom: 1rem; color: #2563eb;">🦆 Traditional Rubber Duck</h3>
+      <ul style="font-size: 1.05rem; line-height: 1.8;">
+        <li>Silent listener</li>
+        <li>Forces verbalization</li>
+        <li>No feedback</li>
+        <li>Self-discovery only</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div>
+    <div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 8px;">
+      <h3 style="margin-bottom: 1rem; color: #2563eb;">🤖 Claude as Rubber Duck++</h3>
+      <ul style="font-size: 1.05rem; line-height: 1.8;">
+        <li>Active thought partner</li>
+        <li>Asks clarifying questions</li>
+        <li>Suggests alternatives</li>
+        <li>Validates assumptions</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 8px; margin-top: 2rem;">
+  <h3 style="margin-bottom: 1rem;">Example Prompts:</h3>
+  <ul style="font-size: 1.05rem; line-height: 1.8;">
+    <li>"I'm thinking about using X pattern here. What are the trade-offs?"</li>
+    <li>"This solution feels complex. Can you help me think through alternatives?"</li>
+    <li>"Walk me through the edge cases for this implementation"</li>
+    <li>"What am I not considering in this architecture?"</li>
+  </ul>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Commit Regularly: Your Safety Net
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; border-left: 4px solid #2563eb;">
+  <p style="font-size: 1.2rem; line-height: 1.6;">
+    <strong>Golden Rule:</strong> Ask Claude to commit after every major change
+  </p>
+</div>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #059669;">✅ When to Commit</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.6;">
+      <li>After implementing a working feature</li>
+      <li>Before attempting a risky refactor</li>
+      <li>When switching between different tasks</li>
+      <li>After fixing a complex bug</li>
+    </ul>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">💡 Pro Tips</h3>
+    <ul style="font-size: 1.05rem; line-height: 1.6;">
+      <li>Use descriptive commit messages</li>
+      <li>Create feature branches for experiments</li>
+      <li>Review changes before committing</li>
+      <li>Use <code style="background: rgba(0,0,0,0.1); padding: 0.2rem 0.4rem; border-radius: 3px;">git stash</code> for temporary saves</li>
+    </ul>
+  </div>
+</div>
+
+<div v-click style="background: rgba(255, 255, 255, 0.8); padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.1rem; color: #666;">
+    "Commit early, commit often, revert without regret"
+  </p>
+</div>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">STRATEGIC INTERACTION</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Putting It All Together
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+  <h2 style="text-align: center; color: #2563eb; margin-bottom: 1rem;">Your Strategic Workflow</h2>
+</div>
+
+<div style="display: grid; gap: 1rem; margin-top: 2rem;">
+  <div v-click style="display: flex; align-items: center; gap: 1rem; background: rgba(255, 255, 255, 0.6); padding: 1rem; border-radius: 8px;">
+    <span style="color: #2563eb; font-size: 1.5rem;">🔍</span>
+    <p style="font-size: 1.1rem; margin: 0;"><strong>Explore:</strong> "Show me the current authentication flow"</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem; background: rgba(255, 255, 255, 0.6); padding: 1rem; border-radius: 8px;">
+    <span style="color: #2563eb; font-size: 1.5rem;">📋</span>
+    <p style="font-size: 1.1rem; margin: 0;"><strong>Plan:</strong> "How would you add OAuth to this system?"</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem; background: rgba(255, 255, 255, 0.6); padding: 1rem; border-radius: 8px;">
+    <span style="color: #2563eb; font-size: 1.5rem;">🎯</span>
+    <p style="font-size: 1.1rem; margin: 0;"><strong>Be Specific:</strong> "Add Google OAuth with these scopes..."</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem; background: rgba(255, 255, 255, 0.6); padding: 1rem; border-radius: 8px;">
+    <span style="color: #2563eb; font-size: 1.5rem;">🔄</span>
+    <p style="font-size: 1.1rem; margin: 0;"><strong>Iterate:</strong> "The login fails with this error..."</p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 1rem; background: rgba(255, 255, 255, 0.6); padding: 1rem; border-radius: 8px;">
+    <span style="color: #2563eb; font-size: 1.5rem;">💾</span>
+    <p style="font-size: 1.1rem; margin: 0;"><strong>Commit:</strong> "Great! Please commit these changes"</p>
+  </div>
+</div>
+
+<div v-click style="margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.2rem; color: #666;">
+    Strategic interaction transforms Claude from a tool into a partner
+  </p>
+</div>
+
