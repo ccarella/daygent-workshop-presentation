@@ -687,3 +687,494 @@ Our Role in Context Engineering
   </div>
 </div>
 
+---
+transition: slide-down
+layout: center
+---
+
+<h1 style="font-size: 5rem; font-weight: 300; letter-spacing: -0.02em; text-align: center;">
+Model Context Protocol
+</h1>
+
+<p style="font-size: 1.5rem; color: #666; text-align: center; margin-top: 2rem;">
+Extending Claude Code Beyond Code
+</p>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">MODEL CONTEXT PROTOCOL</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What is MCP?
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Definition</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      A protocol that allows AI assistants to connect to external tools and data sources through a standardized interface.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Analogy</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Think of it as USB for AI—plug in any tool or data source, and Claude Code can use it instantly.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Purpose</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Connect Claude Code to your tools, databases, and services without writing custom integrations.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MODEL CONTEXT PROTOCOL</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+MCP Architecture
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click>
+    <h2 style="margin-bottom: 1.5rem; color: #2563eb;">MCP Client</h2>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+      <p style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;">
+        <strong>Claude Code as Client:</strong>
+      </p>
+      <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+        <li>Connects to MCP servers</li>
+        <li>Calls server-provided tools</li>
+        <li>Receives data and results</li>
+        <li>Example: Claude Code → Database</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div v-click>
+    <h2 style="margin-bottom: 1.5rem; color: #2563eb;">MCP Server</h2>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+      <p style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;">
+        <strong>Claude Code as Server:</strong>
+      </p>
+      <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+        <li>Exposes Claude's capabilities</li>
+        <li>Other tools can use Claude</li>
+        <li>Provides AI reasoning to apps</li>
+        <li>Example: IDE → Claude Code</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.25rem; margin: 0;">
+    <strong>Key insight:</strong> Claude Code can be both consumer and provider of capabilities
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MODEL CONTEXT PROTOCOL</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+External Data Sources
+</h1>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🗄️</div>
+    <h3 style="margin-bottom: 0.5rem;">Databases</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      PostgreSQL, MySQL, SQLite
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔌</div>
+    <h3 style="margin-bottom: 0.5rem;">APIs</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      REST, GraphQL, WebSockets
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📚</div>
+    <h3 style="margin-bottom: 0.5rem;">Documentation</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      Up-to-date docs & references
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛠️</div>
+    <h3 style="margin-bottom: 0.5rem;">Dev Tools</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      Git, Docker, CI/CD systems
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌐</div>
+    <h3 style="margin-bottom: 0.5rem;">Web Fetching</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      Live data from URLs
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔧</div>
+    <h3 style="margin-bottom: 0.5rem;">Custom Tools</h3>
+    <p style="font-size: 0.95rem; color: #666;">
+      Your internal systems
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: #2563eb; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.1rem; margin: 0;">
+    <strong>Benefit:</strong> Claude Code gets real-time, accurate data instead of relying on training cutoff
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">MODEL CONTEXT PROTOCOL</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Beyond Coding: Non-Code MCPs
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="font-size: 1.5rem; margin-right: 0.75rem;">📧</span>
+      Gmail Integration
+    </h3>
+    <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+      <li>Read and compose emails</li>
+      <li>Search email history</li>
+      <li>Manage labels and filters</li>
+    </ul>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="font-size: 1.5rem; margin-right: 0.75rem;">📋</span>
+      Linear (Project Management)
+    </h3>
+    <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+      <li>Create and update issues</li>
+      <li>Track project progress</li>
+      <li>Manage sprints and roadmaps</li>
+    </ul>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="font-size: 1.5rem; margin-right: 0.75rem;">🎨</span>
+      Canva
+    </h3>
+    <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+      <li>Generate designs</li>
+      <li>Create presentations</li>
+      <li>Export graphics</li>
+    </ul>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="font-size: 1.5rem; margin-right: 0.75rem;">💬</span>
+      Slack
+    </h3>
+    <ul style="font-size: 1rem; line-height: 1.8; color: #666;">
+      <li>Send messages</li>
+      <li>Search conversations</li>
+      <li>Manage channels</li>
+    </ul>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.25rem; text-align: center; margin: 0;">
+    <strong>Power Move:</strong> Claude Code becomes your universal assistant across all tools
+  </p>
+</div>
+
+---
+transition: slide-down
+layout: center
+---
+
+<h1 style="font-size: 4rem; font-weight: 300; letter-spacing: -0.02em; text-align: center;">
+Let's Build with<br/>
+Supabase MCP
+</h1>
+
+<p style="font-size: 1.5rem; color: #666; text-align: center; margin-top: 2rem;">
+Real-time database integration in action
+</p>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">SUPABASE MCP</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What is Supabase?
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem;">Open Source Firebase Alternative</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      PostgreSQL database + Auth + Real-time subscriptions + Storage, all in one platform.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem;">Why Supabase + MCP?</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Claude Code can directly query your database, create tables, manage data—no API wrapper needed.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem;">Perfect for PMs</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Build data-driven apps without backend complexity. Claude handles the SQL, you focus on the product.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">SUPABASE MCP</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Setting Up Supabase MCP
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Install the MCP Server</h3>
+      <code style="background: #fff; padding: 0.3rem 0.5rem; border-radius: 4px; display: inline-block; font-size: 0.875rem;">npx @modelcontextprotocol/create-server supabase</code>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Configure Your Connection</h3>
+      <p style="color: #666;">Add your Supabase URL and anon key to the MCP config</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #10b981; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Start Using in Claude Code</h3>
+      <p style="color: #666;">Claude can now query, insert, update your database directly</p>
+    </div>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+  <h3 style="margin-bottom: 0.75rem; text-align: center;">Available Commands</h3>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.95rem;">
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">query</code>
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">insert</code>
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">update</code>
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">delete</code>
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">list_tables</code>
+    <code style="background: rgba(255,255,255,0.2); padding: 0.5rem; border-radius: 4px; text-align: center;">get_schema</code>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">SUPABASE MCP</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Real Example: Task Tracker
+</h1>
+
+<div style="display: grid; gap: 1.5rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #10b981;">You say:</h3>
+    <p style="font-family: monospace; font-size: 1rem;">
+      "Create a task tracking app with Supabase. I need to track tasks with title, description, status, and due date."
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">Claude Code does:</h3>
+    <ol style="font-size: 1rem; line-height: 1.8; color: #666;">
+      <li>Creates the tasks table in Supabase</li>
+      <li>Sets up the React frontend</li>
+      <li>Implements CRUD operations</li>
+      <li>Adds real-time updates</li>
+      <li>Deploys to Vercel</li>
+    </ol>
+  </div>
+  
+  <div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem;">The Magic:</h3>
+    <p style="font-size: 1.05rem;">
+      You never wrote SQL. Never configured a backend. Never set up authentication. 
+      Just described what you wanted.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">SUPABASE MCP</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+MCP in Your Product Workflow
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 2rem;">
+  <div v-click style="display: flex; align-items: center; gap: 2rem;">
+    <div style="background: #2563eb; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+      💡
+    </div>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Rapid Prototyping</h3>
+      <p style="color: #666;">Test ideas with real data in minutes, not days</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 2rem;">
+    <div style="background: #10b981; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+      📊
+    </div>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Data Analysis</h3>
+      <p style="color: #666;">Query production data to understand user behavior</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 2rem;">
+    <div style="background: #f59e0b; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+      🔧
+    </div>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Internal Tools</h3>
+      <p style="color: #666;">Build admin panels and dashboards without backend help</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: center; gap: 2rem;">
+    <div style="background: #ef4444; color: #fff; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0;">
+      🚀
+    </div>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">MVP Development</h3>
+      <p style="color: #666;">Ship working products to validate with users</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">HANDS-ON</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Let's Build Something Together
+</h1>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 12px; margin: 2rem 0;">
+  <h2 style="margin-bottom: 1.5rem; color: #2563eb;">Workshop Exercise: Feedback Collector</h2>
+  
+  <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem;">
+    We'll build a simple feedback collection app using Supabase MCP:
+  </p>
+  
+  <ol style="font-size: 1.05rem; line-height: 2; color: #666;">
+    <li>Set up Supabase project</li>
+    <li>Configure MCP connection</li>
+    <li>Create feedback table</li>
+    <li>Build submission form</li>
+    <li>View feedback dashboard</li>
+    <li>Deploy to production</li>
+  </ol>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;">
+  <div style="background: #10b981; color: #fff; padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <h3 style="margin-bottom: 0.5rem;">Time Required</h3>
+    <p style="font-size: 1.25rem; font-weight: 600;">~15 minutes</p>
+  </div>
+  
+  <div style="background: #2563eb; color: #fff; padding: 1.5rem; border-radius: 8px; text-align: center;">
+    <h3 style="margin-bottom: 0.5rem;">Skills Gained</h3>
+    <p style="font-size: 1.25rem; font-weight: 600;">Database + Frontend + Deploy</p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">KEY TAKEAWAYS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Remember This About MCP
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; border-left: 4px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem; font-size: 1.5rem;">🔌 Universal Connectivity</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      MCP lets Claude Code connect to ANY tool or service—databases, APIs, SaaS platforms
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; border-left: 4px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem; font-size: 1.5rem;">🚀 Zero to Production</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Build real apps with real databases without learning backend development
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; border-left: 4px solid #f59e0b;">
+    <h3 style="margin-bottom: 0.75rem; font-size: 1.5rem;">🎯 PM Superpower</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Stop waiting for engineering resources—prototype and validate ideas yourself
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 2rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.5rem; margin: 0; font-weight: 300;">
+    MCP + Claude Code = Your ideas become working software
+  </p>
+</div>
+
+---
+
