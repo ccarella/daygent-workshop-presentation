@@ -376,267 +376,6 @@ Let's get started.
 transition: slide-left
 ---
 
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-What is Claude Code?
-</h1>
-
-<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
-An agentic coding tool that operates directly in your terminal—understanding your project, taking real actions, and integrating with your existing workflow.
-</p>
-
-<div style="display: grid; gap: 1.5rem; margin-top: 3rem;">
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🛠</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Terminal Native</h3>
-      <p style="color: #666;">Works in your terminal, integrates with VS Code, JetBrains, Git, Docker</p>
-    </div>
-  </div>
-  
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🤖</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Truly Agentic</h3>
-      <p style="color: #666;">Multi-step processing, coordinated file changes, runs tests, manages Git workflows</p>
-    </div>
-  </div>
-  
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🎯</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Control & Transparency</h3>
-      <p style="color: #666;">Explicit approval for changes, visible progress tracking, interruptible at any point</p>
-    </div>
-  </div>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Beyond Copy-Paste Coding
-</h1>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
-  <div>
-    <h3 style="margin-bottom: 1rem; color: #999;">Traditional AI Tools</h3>
-    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #999;">
-      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-        <li style="margin-bottom: 0.75rem;">📝 Generate code snippets</li>
-        <li style="margin-bottom: 0.75rem;">✂️ Copy-paste workflow</li>
-        <li style="margin-bottom: 0.75rem;">🏢 IDE-specific</li>
-        <li>💭 Single-step responses</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div>
-    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code</h3>
-    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
-      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
-        <li style="margin-bottom: 0.75rem;">🔨 Takes direct actions</li>
-        <li style="margin-bottom: 0.75rem;">🔄 Full workflow automation</li>
-        <li style="margin-bottom: 0.75rem;">🌍 Environment agnostic</li>
-        <li>🧠 Multi-step reasoning</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
-  <p style="font-size: 1.1rem; margin: 0;">
-    <strong>Key Insight:</strong> Claude Code doesn't just suggest—it implements, tests, and iterates
-  </p>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-CLI vs. IDE/Web UI
-</h1>
-
-<div style="display: grid; gap: 2rem; margin-top: 3rem;">
-  <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
-    <h3 style="margin-bottom: 0.75rem;">Claude Code</h3>
-    <p style="font-size: 1.1rem; line-height: 1.7;">
-      Terminal-based • Works with any editor • Integrates with existing workflows
-    </p>
-  </div>
-  
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.5rem; border-radius: 8px;">
-      <h4 style="margin-bottom: 0.5rem; color: #666;">IDE-Bound Tools</h4>
-      <p style="font-size: 0.95rem; line-height: 1.6;">
-        Cursor, Windsurf, Copilot<br/>
-        <span style="color: #999;">Locked to specific editors</span>
-      </p>
-    </div>
-    
-    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.5rem; border-radius: 8px;">
-      <h4 style="margin-bottom: 0.5rem; color: #666;">Web Platforms</h4>
-      <p style="font-size: 0.95rem; line-height: 1.6;">
-        Devin, Codex<br/>
-        <span style="color: #999;">Browser-based interfaces</span>
-      </p>
-    </div>
-  </div>
-  
-  <div style="background: #f4f0eb; border: 2px solid #2563eb; padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
-    <p style="font-size: 1.05rem; margin: 0;">
-      <strong>Trade-off:</strong> Maximum flexibility with existing tools vs. visual UI conveniences
-    </p>
-  </div>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Doers vs. Conversationalists
-</h1>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
-  <div>
-    <h3 style="margin-bottom: 1.5rem; color: #2563eb;">🤖 Agentic Tools</h3>
-    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #2563eb;">
-      <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem;">Claude Code</p>
-      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-        <li>✓ Multi-step execution</li>
-        <li>✓ Long-running tasks</li>
-        <li>✓ Autonomous problem-solving</li>
-        <li>✓ Direct file manipulation</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div>
-    <h3 style="margin-bottom: 1.5rem; color: #999;">💬 Chat Assistants</h3>
-    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #999;">
-      <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem;">ChatGPT, Claude.ai</p>
-      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
-        <li>→ Q&A format</li>
-        <li>→ Code suggestions</li>
-        <li>→ Explanations</li>
-        <li>→ Manual implementation</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2.5rem; text-align: center;">
-  <p style="font-size: 1.15rem; margin: 0;">
-    Claude Code is designed to <strong>do</strong>, not just <strong>discuss</strong>
-  </p>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Understanding Your Codebase
-</h1>
-
-<div style="display: grid; gap: 2rem; margin-top: 3rem;">
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔍</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Agentic Search</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        Claude Code uses <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">grep</code>, <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">find</code>, and <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">glob</code> for real-time exploration
-      </p>
-    </div>
-  </div>
-  
-  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #666; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📚</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem; color: #999;">Static Indexing</h3>
-      <p style="color: #999; font-size: 1.05rem;">
-        Other tools pre-index or chunk code semantically
-      </p>
-    </div>
-  </div>
-</div>
-
-<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
-  <h3 style="margin-bottom: 1rem;">Why Agentic Search?</h3>
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-    <div>
-      <p style="font-size: 1.05rem;"><strong>✓ Always current</strong><br/>No stale index</p>
-    </div>
-    <div>
-      <p style="font-size: 1.05rem;"><strong>✓ Context-aware</strong><br/>Searches adapt to task</p>
-    </div>
-    <div>
-      <p style="font-size: 1.05rem;"><strong>✓ No preprocessing</strong><br/>Works immediately</p>
-    </div>
-    <div>
-      <p style="font-size: 1.05rem;"><strong>✓ Flexible patterns</strong><br/>Complex queries possible</p>
-    </div>
-  </div>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CLAUDE CODE</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Cost Efficiency
-</h1>
-
-<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 3rem;">
-Direct from Anthropic = Better value for your tokens
-</p>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-  <div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; text-align: center;">
-    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code</h3>
-    <div style="font-size: 3rem; font-weight: 600; margin: 1rem 0;">$</div>
-    <p style="font-size: 1.1rem; line-height: 1.6;">
-      Direct Anthropic pricing<br/>
-      Optimized for Opus 4 & Sonnet 4<br/>
-      <span style="color: #2563eb; font-weight: 500;">No middleman markup</span>
-    </p>
-  </div>
-  
-  <div style="background: rgba(255, 255, 255, 0.5); padding: 2rem; border-radius: 8px; text-align: center;">
-    <h3 style="margin-bottom: 1rem; color: #999;">Reseller Tools</h3>
-    <div style="font-size: 3rem; font-weight: 600; margin: 1rem 0;">$$$</div>
-    <p style="font-size: 1.1rem; line-height: 1.6;">
-      Platform fees<br/>
-      Infrastructure costs<br/>
-      <span style="color: #999;">Margin on tokens</span>
-    </p>
-  </div>
-</div>
-
-<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem;">
-  <p style="font-size: 1.1rem; text-align: center; margin: 0;">
-    <strong>Bottom line:</strong> More capability per dollar when using Anthropic models directly
-  </p>
-</div>
-
----
-transition: slide-left
----
-
 <div class="section-label">HANDS-ON DEMO</div>
 
 <h1 style="margin-bottom: 2rem;">
@@ -944,6 +683,305 @@ Our Role in Context Engineering
     <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📊 Evaluate</h3>
     <p style="font-size: 1.05rem; line-height: 1.6;">
       Measure accuracy, tokens, and latency; iterate.
+    </p>
+  </div>
+</div>
+
+---
+transition: slide-down
+layout: center
+---
+
+<h1 style="font-size: 5rem; font-weight: 300; letter-spacing: -0.02em; text-align: center;">
+Claude Code Sub-agents
+</h1>
+
+<p style="font-size: 1.5rem; color: #666; text-align: center; margin-top: 2rem;">
+Orchestrating Your AI Development Team
+</p>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What are Claude Code Sub-agents?
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Definition</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Sub-agents are a recently released feature that allows you to <strong>create your own team of specialized AI agents</strong> for different aspects of your development workflow.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Core Purpose</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      They enable the delegation of specific workflows, such as code reviews, debugging, or testing, to <strong>dedicated AI specialists</strong> that you define, while keeping your main conversation or focus on the big picture.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Independent Operation</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Each sub-agent is designed to operate <strong>independently</strong>, equipped with its <strong>own context, expertise, and a specific set of tools</strong>.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Why Use Sub-agents? Key Benefits
+</h1>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚡</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Enhanced Productivity</h3>
+      <p style="color: #666; font-size: 1.05rem;">Sub-agents accelerate complex, multi-step tasks by allowing you to delegate them to specialized AI.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🚀</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Parallel Processing Power</h3>
+      <p style="color: #666; font-size: 1.05rem;">Work on <strong>multiple tasks simultaneously</strong> without getting confused or mixing up contexts.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🎯</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Specialized Expertise</h3>
+      <p style="color: #666; font-size: 1.05rem;">Equip each agent with unique knowledge and tools for <strong>highly relevant and targeted instructions</strong>.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🧠</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Offloading Cognitive Load</h3>
+      <p style="color: #666; font-size: 1.05rem;"><strong>Delegate implementation details</strong> and routine tasks, freeing up mental energy for higher-level decisions.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Setting Up Your Sub-agents
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">1</span>
+      Initiation
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Use the <code style="background: #fff; padding: 0.3rem 0.5rem; border-radius: 4px;">/agents</code> slash command within Claude Code.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">2</span>
+      Define Scope
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Choose whether the agent will be <strong>project-specific</strong> or <strong>globally accessible</strong> across all projects.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">3</span>
+      Configuration Methods
+    </h3>
+    <div style="font-size: 1.05rem; line-height: 1.6;">
+      <p style="margin-bottom: 0.5rem;"><strong>Manual:</strong> Directly define the agent's properties</p>
+      <p><strong>Claude Generation:</strong> Ask Claude Code to generate the agent definition for you</p>
+    </div>
+  </div>
+  
+  <div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px;">
+    <p style="font-size: 1rem; margin: 0;">
+      <strong>💡 Tip:</strong> Sub-agent definitions are stored as markdown files in <code style="background: rgba(255,255,255,0.2); padding: 0.2rem 0.4rem; border-radius: 3px;">.claude/agents</code>
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Anatomy of a Sub-agent
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div>
+    <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Markdown Structure</h2>
+    
+```yaml
+---
+name: code-reviewer
+location: .claude/agents
+tools: all tools
+description: |
+  Performs detailed code reviews,
+  focusing on security and best practices
+---
+
+# System Prompts
+
+You are a senior code reviewer...
+
+- Focus on security vulnerabilities
+- Check for performance issues
+- Ensure code follows project conventions
+- Avoid excessive use of emojis
+```
+  </div>
+  
+  <div>
+    <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Key Sections</h2>
+    
+    <div style="display: grid; gap: 1.25rem;">
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">name</h3>
+        <p style="font-size: 0.95rem;">Identifier for the agent</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">tools</h3>
+        <p style="font-size: 0.95rem;">Comma-separated list or "all tools"</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">description</h3>
+        <p style="font-size: 0.95rem;">Helps Claude understand when to invoke</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">system prompts</h3>
+        <p style="font-size: 0.95rem;">Specific biases, preferences, or behaviors</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Sub-agent Capabilities & Tooling
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📁</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Core Claude Code Functions</h3>
+      <p style="color: #666; font-size: 1.05rem;">List files, read/edit files, run bash commands - all fundamental operations available.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔌</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Model Context Protocol (MCP) Tools</h3>
+      <p style="color: #666; font-size: 1.05rem;">Connect to databases, fetch documentation, interact with external services (Gmail, Linear, etc).</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🛠️</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Standard CLI Tool Proficiency</h3>
+      <p style="color: #666; font-size: 1.05rem;">Git, Docker, BigQuery - highly proficient with standard development tools.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔍</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Agentic Search</h3>
+      <p style="color: #666; font-size: 1.05rem;">Explore and understand codebases without relying on traditional indexing.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Practical Use Cases
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔍 Code Reviews</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Detailed reviews that find bugs and security issues humans might miss.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🐛 Debugging</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Methodically walk through thousands of lines to identify and fix issues.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🧪 Testing</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Write comprehensive tests, run them, and iteratively fix code based on results.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📚 Research</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Search the web for specific information and integrate context into projects.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📋 Automation</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Generate release notes, extract feature requests, create GitHub issues.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔄 Git Workflows</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Manage entire Git workflows from terminal, including PRs and commits.
     </p>
   </div>
 </div>
@@ -1378,85 +1416,41 @@ Let's Try It: Git Workflow
 </div>
 
 ---
-
----
-transition: slide-left
----
-
-<div class="section-label">MULTIMODAL INPUT</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Visual Context: Images in Claude Code
-</h1>
-
-<div style="display: grid; gap: 2rem; margin-top: 3rem;">
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
-    <h3 style="margin-bottom: 0.75rem;">Why Images Matter</h3>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
-      Show, don't tell. A screenshot can convey UI state, errors, or design intent faster than paragraphs of description.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
-    <h3 style="margin-bottom: 0.75rem;">Closing the Feedback Loop</h3>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
-      Build → Screenshot → Iterate. Visual feedback helps Claude understand exactly what needs adjustment.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
-    <h3 style="margin-bottom: 0.75rem;">Context Efficiency</h3>
-    <p style="font-size: 1.125rem; line-height: 1.7;">
-      One image can replace hundreds of tokens of description—crucial for preserving context window space.
-    </p>
-  </div>
-</div>
-
----
 transition: fade
 ---
 
-<div class="section-label">MULTIMODAL INPUT</div>
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
 
 <h1 style="margin-bottom: 2.5rem;">
-Three Ways to Add Images
+Parallel Processing in Practice
 </h1>
 
 <div style="display: grid; gap: 2rem; margin-top: 3rem;">
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">🖱️ Drag & Drop (macOS)</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        Simply drag image files from Finder directly into your terminal window.
-      </p>
-    </div>
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">"Orchestra Conductor" Metaphor</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Using sub-agents allows you to operate like an "orchestra conductor," managing a <strong>team of AI developers</strong> working in parallel on distinct tasks.
+    </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">📸 Screenshot & Paste</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Shift+Cmd+Ctrl+4</code> to capture, then <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Ctrl+V</code> to paste into Claude Code.
-      </p>
-    </div>
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Running Multiple Instances</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Simultaneously run <strong>multiple Claude Code instances</strong> in separate terminal tabs, each focusing on different features through separate Git worktrees.
+    </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">📁 Reference Files</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        Tell Claude to read existing image files: "Look at ./mockup.png and build this interface"
-      </p>
-    </div>
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Intelligent Queuing System</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      <strong>Type multiple prompts sequentially</strong>, and Claude will intelligently work through them. Claude knows when to execute queued messages and when human feedback is required.
+    </p>
   </div>
 </div>
 
 <div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
   <p style="font-size: 1.25rem; text-align: center; margin: 0;">
-    <strong>Pro Tip:</strong> macOS screenshot to clipboard is the fastest workflow
+    This significantly reduces idle time and allows you to queue up tasks and return to substantial work completed.
   </p>
 </div>
 
@@ -1464,53 +1458,43 @@ Three Ways to Add Images
 transition: fade
 ---
 
-<div class="section-label">MULTIMODAL INPUT</div>
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
 
 <h1 style="margin-bottom: 2.5rem;">
-Powerful Use Cases
+Advanced Considerations & Future
 </h1>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🎨 Mockup to Code</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      Upload a design mockup and ask Claude to implement it. Works with hand-drawn sketches too!
-    </p>
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🐝</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Agent Swarms</h3>
+      <p style="color: #666; font-size: 1.05rem;">Multiple instances tackle a problem concurrently with an LLM "judge" selecting the best version.</p>
+    </div>
   </div>
   
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🐛 Visual Debugging</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      Screenshot errors, layout issues, or unexpected behavior—Claude can see and fix them.
-    </p>
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚙️</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Custom Hooks</h3>
+      <p style="color: #666; font-size: 1.05rem;">Configure shell commands that execute at various points in Claude Code's lifecycle.</p>
+    </div>
   </div>
   
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔄 Iterative Refinement</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      Build → Screenshot → "Move button left" → Screenshot → "Make it blue" → Perfect!
-    </p>
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">💾</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Memory & Context Management</h3>
+      <p style="color: #666; font-size: 1.05rem;">Equip each sub-agent with precise context to manage the overall context window effectively.</p>
+    </div>
   </div>
   
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📊 Data Extraction</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      Upload charts, tables, or diagrams—Claude can extract data or recreate them in code.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🎯 Style Matching</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      "Make my app look like this screenshot"—Claude matches colors, fonts, and layouts.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📱 Responsive Testing</h3>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      Share mobile/tablet screenshots to fix responsive design issues across devices.
-    </p>
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📦</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Portability</h3>
+      <p style="color: #666; font-size: 1.05rem;">Agent definitions can be committed to your repository for shareable and reusable workflows.</p>
+    </div>
   </div>
 </div>
 
@@ -1518,158 +1502,39 @@ Powerful Use Cases
 transition: fade
 ---
 
-<div class="section-label">MULTIMODAL INPUT</div>
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
 
 <h1 style="margin-bottom: 2.5rem;">
-Live Demo: Screenshot Workflow
+Summary & Key Takeaways
 </h1>
 
-<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Build Something</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        Ask Claude to create a simple UI component or page
-      </p>
-    </div>
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #ef4444;">
+    <h3 style="margin-bottom: 0.75rem;">🔑 Core Concept</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Claude Code's sub-agents let you create a specialized AI development team, each member focused on specific tasks with custom tools and instructions.
+    </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Capture Screenshot</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Shift+Cmd+Ctrl+4</code> - Select area to capture to clipboard
-      </p>
-    </div>
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #f59e0b;">
+    <h3 style="margin-bottom: 0.75rem;">💡 Key Benefits</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Parallel processing, specialized delegation, and deep contextual understanding make coding more efficient and less tedious.
+    </p>
   </div>
   
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Paste into Claude Code</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        <code style="background: #fff; padding: 0.2rem 0.4rem; border-radius: 3px;">Ctrl+V</code> - Image appears in terminal
-      </p>
-    </div>
-  </div>
-  
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">4</span>
-    <div>
-      <h3 style="margin-bottom: 0.5rem;">Request Changes</h3>
-      <p style="color: #666; font-size: 1.05rem;">
-        "Make the header blue and add more spacing between buttons"
-      </p>
-    </div>
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem;">🚀 Future of Coding</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      This agentic approach aligns with the industry's trajectory towards increased code generation and complex multi-step processing driven by natural language.
+    </p>
   </div>
 </div>
 
-<div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
-  <p style="font-size: 1.1rem; color: #2563eb; font-weight: 500; margin: 0;">
-    Let's try it together! Build → Screenshot → Iterate
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.25rem; margin: 0;">
+    <strong>Ready to orchestrate your own AI development team?</strong>
   </p>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">MULTIMODAL INPUT</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Advanced: Automated Screenshots
-</h1>
-
-<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
-  <h3 style="margin-bottom: 1rem;">🤖 Puppeteer MCP Server</h3>
-  <p style="font-size: 1.125rem; line-height: 1.7;">
-    Automate browser interactions and capture screenshots programmatically—perfect for testing flows and documenting UI states.
-  </p>
-</div>
-
-<div style="display: grid; gap: 1.5rem;">
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      <strong>Automated Testing:</strong> Capture screenshots at each step of user flows
-    </p>
-  </div>
-  
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      <strong>Visual Regression:</strong> Compare screenshots across builds to catch UI changes
-    </p>
-  </div>
-  
-  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
-    <span style="background: #10b981; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">✓</span>
-    <p style="font-size: 1.05rem; line-height: 1.6;">
-      <strong>Documentation:</strong> Auto-generate visual docs by screenshotting all pages
-    </p>
-  </div>
-</div>
-
-<div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
-  <p style="font-size: 1.1rem; margin: 0;">
-    <code>npm install @modelcontextprotocol/server-puppeteer</code>
-  </p>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">MULTIMODAL INPUT</div>
-
-<h1 style="margin-bottom: 2.5rem;">
-Best Practices & Tips
-</h1>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">📐 Crop Thoughtfully</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      Focus on the relevant UI area—Claude performs better with clear, focused images.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">💬 Add Context</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      "Here's the current state. Please fix the alignment of the nav items."
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">🔄 Multiple Views</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      Share desktop + mobile views together for responsive fixes.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">🎯 Annotate</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      Use Preview.app to add arrows or circles before uploading.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">📊 Token Awareness</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      Images use ~1,600 tokens. Use wisely in long conversations.
-    </p>
-  </div>
-  
-  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.5rem; border-radius: 8px;">
-    <h3 style="margin-bottom: 0.75rem;">🚀 Quick Iteration</h3>
-    <p style="font-size: 0.95rem; line-height: 1.5;">
-      Keep browser and terminal side-by-side for rapid feedback loops.
-    </p>
-  </div>
 </div>
 
 ---
