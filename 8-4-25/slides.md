@@ -840,8 +840,8 @@ Anatomy of a Sub-agent
   <div>
     <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Markdown Structure</h2>
     
-    <pre style="background: #1e1e1e; color: #d4d4d4; padding: 1.5rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
-<code>---
+```yaml
+---
 name: code-reviewer
 location: .claude/agents
 tools: all tools
@@ -857,8 +857,8 @@ You are a senior code reviewer...
 - Focus on security vulnerabilities
 - Check for performance issues
 - Ensure code follows project conventions
-- Avoid excessive use of emojis</code>
-    </pre>
+- Avoid excessive use of emojis
+```
   </div>
   
   <div>
