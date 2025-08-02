@@ -376,6 +376,267 @@ Let's get started.
 transition: slide-left
 ---
 
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What is Claude Code?
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 2rem;">
+An agentic coding tool that operates directly in your terminal—understanding your project, taking real actions, and integrating with your existing workflow.
+</p>
+
+<div style="display: grid; gap: 1.5rem; margin-top: 3rem;">
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🛠</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Terminal Native</h3>
+      <p style="color: #666;">Works in your terminal, integrates with VS Code, JetBrains, Git, Docker</p>
+    </div>
+  </div>
+  
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🤖</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Truly Agentic</h3>
+      <p style="color: #666;">Multi-step processing, coordinated file changes, runs tests, manages Git workflows</p>
+    </div>
+  </div>
+  
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">🎯</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Control & Transparency</h3>
+      <p style="color: #666;">Explicit approval for changes, visible progress tracking, interruptible at any point</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Beyond Copy-Paste Coding
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div>
+    <h3 style="margin-bottom: 1rem; color: #999;">Traditional AI Tools</h3>
+    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #999;">
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="margin-bottom: 0.75rem;">📝 Generate code snippets</li>
+        <li style="margin-bottom: 0.75rem;">✂️ Copy-paste workflow</li>
+        <li style="margin-bottom: 0.75rem;">🏢 IDE-specific</li>
+        <li>💭 Single-step responses</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div>
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code</h3>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 2;">
+        <li style="margin-bottom: 0.75rem;">🔨 Takes direct actions</li>
+        <li style="margin-bottom: 0.75rem;">🔄 Full workflow automation</li>
+        <li style="margin-bottom: 0.75rem;">🌍 Environment agnostic</li>
+        <li>🧠 Multi-step reasoning</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+  <p style="font-size: 1.1rem; margin: 0;">
+    <strong>Key Insight:</strong> Claude Code doesn't just suggest—it implements, tests, and iterates
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+CLI vs. IDE/Web UI
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Claude Code</h3>
+    <p style="font-size: 1.1rem; line-height: 1.7;">
+      Terminal-based • Works with any editor • Integrates with existing workflows
+    </p>
+  </div>
+  
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.5rem; border-radius: 8px;">
+      <h4 style="margin-bottom: 0.5rem; color: #666;">IDE-Bound Tools</h4>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        Cursor, Windsurf, Copilot<br/>
+        <span style="color: #999;">Locked to specific editors</span>
+      </p>
+    </div>
+    
+    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.5rem; border-radius: 8px;">
+      <h4 style="margin-bottom: 0.5rem; color: #666;">Web Platforms</h4>
+      <p style="font-size: 0.95rem; line-height: 1.6;">
+        Devin, Codex<br/>
+        <span style="color: #999;">Browser-based interfaces</span>
+      </p>
+    </div>
+  </div>
+  
+  <div style="background: #f4f0eb; border: 2px solid #2563eb; padding: 1.5rem; border-radius: 8px; margin-top: 1rem;">
+    <p style="font-size: 1.05rem; margin: 0;">
+      <strong>Trade-off:</strong> Maximum flexibility with existing tools vs. visual UI conveniences
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Doers vs. Conversationalists
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
+  <div>
+    <h3 style="margin-bottom: 1.5rem; color: #2563eb;">🤖 Agentic Tools</h3>
+    <div style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #2563eb;">
+      <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem;">Claude Code</p>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+        <li>✓ Multi-step execution</li>
+        <li>✓ Long-running tasks</li>
+        <li>✓ Autonomous problem-solving</li>
+        <li>✓ Direct file manipulation</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div>
+    <h3 style="margin-bottom: 1.5rem; color: #999;">💬 Chat Assistants</h3>
+    <div style="background: rgba(255, 255, 255, 0.5); padding: 1.75rem; border-radius: 8px; border-left: 4px solid #999;">
+      <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1rem;">ChatGPT, Claude.ai</p>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+        <li>→ Q&A format</li>
+        <li>→ Code suggestions</li>
+        <li>→ Explanations</li>
+        <li>→ Manual implementation</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 2.5rem; text-align: center;">
+  <p style="font-size: 1.15rem; margin: 0;">
+    Claude Code is designed to <strong>do</strong>, not just <strong>discuss</strong>
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Understanding Your Codebase
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔍</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Agentic Search</h3>
+      <p style="color: #666; font-size: 1.05rem;">
+        Claude Code uses <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">grep</code>, <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">find</code>, and <code style="background: rgba(0,0,0,0.05); padding: 0.2rem 0.4rem; border-radius: 3px;">glob</code> for real-time exploration
+      </p>
+    </div>
+  </div>
+  
+  <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #666; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📚</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem; color: #999;">Static Indexing</h3>
+      <p style="color: #999; font-size: 1.05rem;">
+        Other tools pre-index or chunk code semantically
+      </p>
+    </div>
+  </div>
+</div>
+
+<div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+  <h3 style="margin-bottom: 1rem;">Why Agentic Search?</h3>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+    <div>
+      <p style="font-size: 1.05rem;"><strong>✓ Always current</strong><br/>No stale index</p>
+    </div>
+    <div>
+      <p style="font-size: 1.05rem;"><strong>✓ Context-aware</strong><br/>Searches adapt to task</p>
+    </div>
+    <div>
+      <p style="font-size: 1.05rem;"><strong>✓ No preprocessing</strong><br/>Works immediately</p>
+    </div>
+    <div>
+      <p style="font-size: 1.05rem;"><strong>✓ Flexible patterns</strong><br/>Complex queries possible</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Cost Efficiency
+</h1>
+
+<p style="font-size: 1.25rem; max-width: 800px; line-height: 1.7; margin-bottom: 3rem;">
+Direct from Anthropic = Better value for your tokens
+</p>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+  <div style="background: rgba(255, 255, 255, 0.6); padding: 2rem; border-radius: 8px; text-align: center;">
+    <h3 style="margin-bottom: 1rem; color: #2563eb;">Claude Code</h3>
+    <div style="font-size: 3rem; font-weight: 600; margin: 1rem 0;">$</div>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Direct Anthropic pricing<br/>
+      Optimized for Opus 4 & Sonnet 4<br/>
+      <span style="color: #2563eb; font-weight: 500;">No middleman markup</span>
+    </p>
+  </div>
+  
+  <div style="background: rgba(255, 255, 255, 0.5); padding: 2rem; border-radius: 8px; text-align: center;">
+    <h3 style="margin-bottom: 1rem; color: #999;">Reseller Tools</h3>
+    <div style="font-size: 3rem; font-weight: 600; margin: 1rem 0;">$$$</div>
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Platform fees<br/>
+      Infrastructure costs<br/>
+      <span style="color: #999;">Margin on tokens</span>
+    </p>
+  </div>
+</div>
+
+<div style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px; margin-top: 3rem;">
+  <p style="font-size: 1.1rem; text-align: center; margin: 0;">
+    <strong>Bottom line:</strong> More capability per dollar when using Anthropic models directly
+  </p>
+</div>
+
+---
+transition: slide-left
+---
+
 <div class="section-label">HANDS-ON DEMO</div>
 
 <h1 style="margin-bottom: 2rem;">
