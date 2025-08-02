@@ -687,3 +687,425 @@ Our Role in Context Engineering
   </div>
 </div>
 
+---
+transition: slide-down
+layout: center
+---
+
+<h1 style="font-size: 5rem; font-weight: 300; letter-spacing: -0.02em; text-align: center;">
+Claude Code Sub-agents
+</h1>
+
+<p style="font-size: 1.5rem; color: #666; text-align: center; margin-top: 2rem;">
+Orchestrating Your AI Development Team
+</p>
+
+---
+transition: slide-left
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+What are Claude Code Sub-agents?
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Definition</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Sub-agents are a recently released feature that allows you to <strong>create your own team of specialized AI agents</strong> for different aspects of your development workflow.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Core Purpose</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      They enable the delegation of specific workflows, such as code reviews, debugging, or testing, to <strong>dedicated AI specialists</strong> that you define, while keeping your main conversation or focus on the big picture.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Independent Operation</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Each sub-agent is designed to operate <strong>independently</strong>, equipped with its <strong>own context, expertise, and a specific set of tools</strong>.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Why Use Sub-agents? Key Benefits
+</h1>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚡</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Enhanced Productivity</h3>
+      <p style="color: #666; font-size: 1.05rem;">Sub-agents accelerate complex, multi-step tasks by allowing you to delegate them to specialized AI.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🚀</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Parallel Processing Power</h3>
+      <p style="color: #666; font-size: 1.05rem;">Work on <strong>multiple tasks simultaneously</strong> without getting confused or mixing up contexts.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🎯</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Specialized Expertise</h3>
+      <p style="color: #666; font-size: 1.05rem;">Equip each agent with unique knowledge and tools for <strong>highly relevant and targeted instructions</strong>.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🧠</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Offloading Cognitive Load</h3>
+      <p style="color: #666; font-size: 1.05rem;"><strong>Delegate implementation details</strong> and routine tasks, freeing up mental energy for higher-level decisions.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Setting Up Your Sub-agents
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">1</span>
+      Initiation
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Use the <code style="background: #fff; padding: 0.3rem 0.5rem; border-radius: 4px;">/agents</code> slash command within Claude Code.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">2</span>
+      Define Scope
+    </h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Choose whether the agent will be <strong>project-specific</strong> or <strong>globally accessible</strong> across all projects.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 1rem; display: flex; align-items: center;">
+      <span style="background: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.875rem; margin-right: 0.75rem;">3</span>
+      Configuration Methods
+    </h3>
+    <div style="font-size: 1.05rem; line-height: 1.6;">
+      <p style="margin-bottom: 0.5rem;"><strong>Manual:</strong> Directly define the agent's properties</p>
+      <p><strong>Claude Generation:</strong> Ask Claude Code to generate the agent definition for you</p>
+    </div>
+  </div>
+  
+  <div v-click style="background: #000; color: #fff; padding: 1.5rem; border-radius: 8px;">
+    <p style="font-size: 1rem; margin: 0;">
+      <strong>💡 Tip:</strong> Sub-agent definitions are stored as markdown files in <code style="background: rgba(255,255,255,0.2); padding: 0.2rem 0.4rem; border-radius: 3px;">.claude/agents</code>
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Anatomy of a Sub-agent
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div>
+    <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Markdown Structure</h2>
+    
+    <pre style="background: #1e1e1e; color: #d4d4d4; padding: 1.5rem; border-radius: 8px; font-size: 0.9rem; overflow-x: auto;">
+<code>---
+name: code-reviewer
+location: .claude/agents
+tools: all tools
+description: |
+  Performs detailed code reviews,
+  focusing on security and best practices
+---
+
+# System Prompts
+
+You are a senior code reviewer...
+
+- Focus on security vulnerabilities
+- Check for performance issues
+- Ensure code follows project conventions
+- Avoid excessive use of emojis</code>
+    </pre>
+  </div>
+  
+  <div>
+    <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Key Sections</h2>
+    
+    <div style="display: grid; gap: 1.25rem;">
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">name</h3>
+        <p style="font-size: 0.95rem;">Identifier for the agent</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">tools</h3>
+        <p style="font-size: 0.95rem;">Comma-separated list or "all tools"</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">description</h3>
+        <p style="font-size: 0.95rem;">Helps Claude understand when to invoke</p>
+      </div>
+      
+      <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.25rem; border-radius: 8px;">
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #2563eb;">system prompts</h3>
+        <p style="font-size: 0.95rem;">Specific biases, preferences, or behaviors</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Sub-agent Capabilities & Tooling
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📁</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Core Claude Code Functions</h3>
+      <p style="color: #666; font-size: 1.05rem;">List files, read/edit files, run bash commands - all fundamental operations available.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔌</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Model Context Protocol (MCP) Tools</h3>
+      <p style="color: #666; font-size: 1.05rem;">Connect to databases, fetch documentation, interact with external services (Gmail, Linear, etc).</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🛠️</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Standard CLI Tool Proficiency</h3>
+      <p style="color: #666; font-size: 1.05rem;">Git, Docker, BigQuery - highly proficient with standard development tools.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🔍</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Agentic Search</h3>
+      <p style="color: #666; font-size: 1.05rem;">Explore and understand codebases without relying on traditional indexing.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Practical Use Cases
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔍 Code Reviews</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Detailed reviews that find bugs and security issues humans might miss.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🐛 Debugging</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Methodically walk through thousands of lines to identify and fix issues.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🧪 Testing</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Write comprehensive tests, run them, and iteratively fix code based on results.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📚 Research</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Search the web for specific information and integrate context into projects.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📋 Automation</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Generate release notes, extract feature requests, create GitHub issues.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🔄 Git Workflows</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Manage entire Git workflows from terminal, including PRs and commits.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Parallel Processing in Practice
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">"Orchestra Conductor" Metaphor</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Using sub-agents allows you to operate like an "orchestra conductor," managing a <strong>team of AI developers</strong> working in parallel on distinct tasks.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Running Multiple Instances</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Simultaneously run <strong>multiple Claude Code instances</strong> in separate terminal tabs, each focusing on different features through separate Git worktrees.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Intelligent Queuing System</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      <strong>Type multiple prompts sequentially</strong>, and Claude will intelligently work through them. Claude knows when to execute queued messages and when human feedback is required.
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem;">
+  <p style="font-size: 1.25rem; text-align: center; margin: 0;">
+    This significantly reduces idle time and allows you to queue up tasks and return to substantial work completed.
+  </p>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Advanced Considerations & Future
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">🐝</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Agent Swarms</h3>
+      <p style="color: #666; font-size: 1.05rem;">Multiple instances tackle a problem concurrently with an LLM "judge" selecting the best version.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">⚙️</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Custom Hooks</h3>
+      <p style="color: #666; font-size: 1.05rem;">Configure shell commands that execute at various points in Claude Code's lifecycle.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">💾</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Memory & Context Management</h3>
+      <p style="color: #666; font-size: 1.05rem;">Equip each sub-agent with precise context to manage the overall context window effectively.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">📦</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Portability</h3>
+      <p style="color: #666; font-size: 1.05rem;">Agent definitions can be committed to your repository for shareable and reusable workflows.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CLAUDE CODE SUB-AGENTS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Summary & Key Takeaways
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #ef4444;">
+    <h3 style="margin-bottom: 0.75rem;">🔑 Core Concept</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Claude Code's sub-agents let you create a specialized AI development team, each member focused on specific tasks with custom tools and instructions.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #f59e0b;">
+    <h3 style="margin-bottom: 0.75rem;">💡 Key Benefits</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Parallel processing, specialized delegation, and deep contextual understanding make coding more efficient and less tedious.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #10b981;">
+    <h3 style="margin-bottom: 0.75rem;">🚀 Future of Coding</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      This agentic approach aligns with the industry's trajectory towards increased code generation and complex multi-step processing driven by natural language.
+    </p>
+  </div>
+</div>
+
+<div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+  <p style="font-size: 1.25rem; margin: 0;">
+    <strong>Ready to orchestrate your own AI development team?</strong>
+  </p>
+</div>
+
+---
