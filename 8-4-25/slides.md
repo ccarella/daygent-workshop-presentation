@@ -836,11 +836,6 @@ Practical Agent Examples
 </div>
 
 ---
-transition: fade
----
-
-
----
 transition: slide-left
 ---
 
@@ -906,13 +901,6 @@ The Magic: Claude Handles Git
     <strong>No Git Knowledge Required!</strong> Just tell Claude what you did
   </div>
 </div>
-
----
-transition: fade
----
-
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
 
 ---
 transition: fade
@@ -1028,20 +1016,6 @@ Vercel makes deployment magical - no servers, no config, just URLs
 </div>
 
 ---
-transition: fade
----
-
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-
----
-transition: fade
----
-
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-
----
 transition: slide-left
 ---
 
@@ -1054,27 +1028,12 @@ Let's Build Something Real!
 <div class="exercise-box">
   <h3>Your Turn: Ship Your First Feature</h3>
   
-  <div class="workshop-checklist">
-    <div class="workshop-checklist-item">
-      <input type="checkbox">
-      <span>Add a new feature to your portfolio</span>
-    </div>
-    
-    <div class="workshop-checklist-item">
-      <input type="checkbox">
-      <span>Commit your changes</span>
-    </div>
-    
-    <div class="workshop-checklist-item">
-      <input type="checkbox">
-      <span>Create a pull request</span>
-    </div>
-    
-    <div class="workshop-checklist-item">
-      <input type="checkbox">
-      <span>Share your live URL in the chat!</span>
-    </div>
-  </div>
+  <ul class="list-clean text-large">
+    <li class="mb-2">☐ Add a new feature to your portfolio</li>
+    <li class="mb-2">☐ Commit your changes</li>
+    <li class="mb-2">☐ Create a pull request</li>
+    <li>☐ Share your live URL in the chat!</li>
+  </ul>
 </div>
 
 <div class="follow-along mt-4">
@@ -1116,34 +1075,22 @@ layout: center
 
 <h1 class="mb-4">Design System Reference</h1>
 
-<div class="container-wide">
-  <div class="grid-2 mb-4">
-    <div class="workshop-card">
-      <h3 class="text-primary mb-2">Workshop Components</h3>
-      <ul class="list-clean">
-        <li class="mb-1">• <code class="workshop-code-inline">.workshop-step</code> - Setup instructions</li>
-        <li class="mb-1">• <code class="workshop-code-inline">.workshop-checkpoint</code> - Important alerts</li>
-        <li class="mb-1">• <code class="workshop-code-inline">.follow-along</code> - Live coding sections</li>
-        <li>• <code class="workshop-code-inline">.workshop-tip</code> - Helpful hints</li>
-      </ul>
-    </div>
-    
-    <div class="workshop-card">
-      <h3 class="text-primary mb-2">Container Utilities</h3>
-      <ul class="list-clean">
-        <li class="mb-1">• <code class="workshop-code-inline">.container-narrow</code> - 700px</li>
-        <li class="mb-1">• <code class="workshop-code-inline">.container-medium</code> - 800px</li>
-        <li class="mb-1">• <code class="workshop-code-inline">.container-wide</code> - 900px</li>
-        <li>• <code class="workshop-code-inline">.container-full</code> - 1200px</li>
-      </ul>
-    </div>
-  </div>
+<div class="container-medium">
+  <h3 class="text-primary mb-2">Workshop Components</h3>
+  <ul class="list-clean mb-4">
+    <li class="mb-1">• <code>.workshop-step</code> - Setup instructions</li>
+    <li class="mb-1">• <code>.workshop-checkpoint</code> - Important alerts</li>
+    <li class="mb-1">• <code>.follow-along</code> - Live coding sections</li>
+    <li>• <code>.workshop-tip</code> - Helpful hints</li>
+  </ul>
   
-  <div class="workshop-checkpoint">
-    <p class="text-center mb-0">
-      <strong>All inline styles have been migrated to reusable CSS classes!</strong>
-    </p>
-  </div>
+  <h3 class="text-primary mb-2">Container Utilities</h3>
+  <ul class="list-clean">
+    <li class="mb-1">• <code>.container-narrow</code> - 700px</li>
+    <li class="mb-1">• <code>.container-medium</code> - 800px</li>
+    <li class="mb-1">• <code>.container-wide</code> - 900px</li>
+    <li>• <code>.container-full</code> - 1200px</li>
+  </ul>
 </div>
 
 ---
