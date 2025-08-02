@@ -513,3 +513,177 @@ layout: center
 
 <img src="/images/Get Started/CleanShot 2025-08-01 at 17.06.10.png" style="width: 100%; height: 95vh; object-fit: contain; display: block; margin: 0 auto;" />
 
+---
+transition: slide-left
+---
+
+<div class="section-label">CONTEXT WINDOWS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Context Windows 101
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">What</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      The amount of text (tokens) an LLM can read at once—your prompt + history + retrieved docs + tool results.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Analogy</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Short-term working memory. Anything outside it is unseen unless you bring it back in.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px; border-left: 3px solid #2563eb;">
+    <h3 style="margin-bottom: 0.75rem;">Unit</h3>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Tokens (≈ word pieces). Budgets are finite—plan them.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CONTEXT WINDOWS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Why It Matters (Especially for Agents)
+</h1>
+
+<div style="display: grid; gap: 1.75rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #ef4444; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">!</span>
+    <p style="font-size: 1.125rem; line-height: 1.7;">
+      Agents juggle chat history, tool traces, code, and docs—token usage explodes fast.
+    </p>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #f59e0b; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">⚠</span>
+    <div>
+      <p style="font-size: 1.125rem; line-height: 1.7; margin-bottom: 0.5rem;">
+        <strong>Too much context →</strong> higher cost/latency, dilution ("lost in the middle"), conflicts.
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #f59e0b; color: #fff; width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">⚠</span>
+    <div>
+      <p style="font-size: 1.125rem; line-height: 1.7;">
+        <strong>Too little context →</strong> missing facts, brittle behavior, repeated questions.
+      </p>
+    </div>
+  </div>
+  
+  <div v-click style="background: #000; color: #fff; padding: 1.75rem; border-radius: 8px; margin-top: 1rem;">
+    <p style="font-size: 1.25rem; text-align: center; margin: 0;">
+      <strong>Goal:</strong> Right info, right order, right size.
+    </p>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CONTEXT WINDOWS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+How Models Read Context (Mental Model)
+</h1>
+
+<div style="display: grid; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">1</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Position matters</h3>
+      <p style="color: #666; font-size: 1.05rem;">Recent text often weighs more—put the user goal near the end.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">2</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Salience wins</h3>
+      <p style="color: #666; font-size: 1.05rem;">Concise, explicit facts beat long, noisy passages.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">3</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Instruction precedence</h3>
+      <p style="color: #666; font-size: 1.05rem;">System > developer > user—avoid conflicts.</p>
+    </div>
+  </div>
+  
+  <div v-click style="display: flex; align-items: flex-start; gap: 1.5rem;">
+    <span style="background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">4</span>
+    <div>
+      <h3 style="margin-bottom: 0.5rem;">Consistency</h3>
+      <p style="color: #666; font-size: 1.05rem;">Repeated, aligned cues steer outputs; contradictions derail.</p>
+    </div>
+  </div>
+</div>
+
+---
+transition: fade
+---
+
+<div class="section-label">CONTEXT WINDOWS</div>
+
+<h1 style="margin-bottom: 2.5rem;">
+Our Role in Context Engineering
+</h1>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📝 Curate</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Choose only the few artifacts that change the answer.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📦 Compress</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Summarize long history into short, lossless notes.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📍 Place</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Order chunks—policy first, goal last, critical facts nearby.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">🚦 Route</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Pick the smallest capable model/window; upgrade only if needed.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">💾 Cache</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Reuse static context (APIs, docs) across turns to cut cost.
+    </p>
+  </div>
+  
+  <div v-click style="background: rgba(255, 255, 255, 0.6); padding: 1.75rem; border-radius: 8px;">
+    <h3 style="margin-bottom: 0.75rem; color: #2563eb;">📊 Evaluate</h3>
+    <p style="font-size: 1.05rem; line-height: 1.6;">
+      Measure accuracy, tokens, and latency; iterate.
+    </p>
+  </div>
+</div>
+
