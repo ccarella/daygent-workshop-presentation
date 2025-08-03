@@ -130,16 +130,7 @@ p {
   letter-spacing: 0.05em;
 }
 
-/* Slidev page number styling */
-.slidev-page-number {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  font-size: 0.875rem;
-  color: #666;
-  font-weight: 500;
-  z-index: 100;
-}
+/* Page numbers are hidden - remove conflicting styles */
 
 /* Workshop specific components */
 .workshop-step {

@@ -1,7 +1,5 @@
 <template>
-  <div v-if="$slidev.nav.currentPage > 1" class="page-number">
-    {{ $slidev.nav.currentPage - 1 }}
-  </div>
+  <!-- Page numbers disabled -->
 </template>
 
 <script setup>
