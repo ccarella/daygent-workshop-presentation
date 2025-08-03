@@ -141,6 +141,66 @@ p {
   z-index: 100;
 }
 
+/* Workshop specific components */
+.workshop-step {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #2563eb;
+}
+
+.workshop-code {
+  font-family: 'Fira Code', monospace;
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+/* Container utilities */
+.container-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.text-large {
+  font-size: 1.125rem;
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 2.5rem; }
+
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+
+.list-clean {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-clean li {
+  padding-left: 0;
+}
+
+.list-spaced li {
+  margin-bottom: 0.75rem;
+}
+
+.list-large {
+  font-size: 1.125rem;
+}
+
 </style>
 
 # <span class="brand">DAYGENT</span>
@@ -245,12 +305,12 @@ What Do You Want to Get Out of Today?
   </p>
   
   <ul class="text-medium list-clean list-spaced list-large">
-    <li>• Build internal tools</li>
-    <li>• Understand what's possible</li>
-    <li>• Move faster with AI</li>
-    <li>• Prototype ideas quickly</li>
-    <li>• Collaborate better with engineers</li>
-    <li>• Speak developer language</li>
+    <li>Build internal tools</li>
+    <li>Understand what's possible</li>
+    <li>Move faster with AI</li>
+    <li>Prototype ideas quickly</li>
+    <li>Collaborate better with engineers</li>
+    <li>Speak developer language</li>
   </ul>
 </div>
 
@@ -262,27 +322,40 @@ What Do You Want to Get Out of Today?
 
 <div class="section-label">WORKSHOP</div>
 
-<h1 class="mb-4">Setup: GitHub</h1>
+<h1 style="font-size: 1.75rem; margin-bottom: 1.5rem;">Setup: GitHub</h1>
 
-<div class="container-narrow setup-section">
-  <div class="workshop-step">
-    <h2 class="mb-2">1. Create Account</h2>
-    <p class="text-large mb-1">
-      <a href="https://github.com/join" class="text-primary">github.com/join</a>
-    </p>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-2">2. Install CLI</h2>
-    <code class="workshop-code">brew install gh</code>
-    <p class="text-muted mt-2">Windows: Download from GitHub releases</p>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-2">3. Authenticate</h2>
-    <code class="workshop-code">gh auth login</code>
-    <p class="text-muted mt-2">Choose: Login with a web browser</p>
-  </div>
+<div style="max-width: 800px; margin: 0 auto;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Create Account</h3>
+        <a href="https://github.com/join" class="text-primary" style="font-size: 1rem;">github.com/join</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Install CLI</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">brew install gh</code>
+        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.875rem;">Windows: Download from GitHub releases</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+      </td>
+      <td>
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Authenticate</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">gh auth login</code>
+        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.875rem;">Choose: Login with a web browser</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -291,27 +364,40 @@ transition: fade
 
 <div class="section-label">WORKSHOP</div>
 
-<h1 class="mb-4">Setup: Vercel</h1>
+<h1 style="font-size: 1.75rem; margin-bottom: 1.5rem;">Setup: Vercel</h1>
 
-<div class="container-narrow setup-section">
-  <div class="workshop-step">
-    <h2 class="mb-2">1. Sign Up</h2>
-    <p class="text-large mb-1">
-      <a href="https://vercel.com/signup" class="text-primary">vercel.com/signup</a>
-    </p>
-    <p class="text-muted">Use your GitHub account to sign in</p>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-2">2. Install CLI</h2>
-    <code class="workshop-code">npm i -g vercel</code>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-2">3. Authenticate</h2>
-    <code class="workshop-code">vercel login</code>
-    <p class="text-muted mt-2">Opens browser for authentication</p>
-  </div>
+<div style="max-width: 800px; margin: 0 auto;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Sign Up</h3>
+        <a href="https://vercel.com/signup" class="text-primary" style="font-size: 1rem;">vercel.com/signup</a>
+        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.875rem;">Use your GitHub account to sign in</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Install CLI</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">npm i -g vercel</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+      </td>
+      <td>
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Authenticate</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">vercel login</code>
+        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.875rem;">Opens browser for authentication</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -320,24 +406,39 @@ transition: fade
 
 <div class="section-label">WORKSHOP</div>
 
-<h1 class="mb-5">Setup: Claude Code</h1>
+<h1 style="font-size: 1.75rem; margin-bottom: 1.5rem;">Setup: Claude Code</h1>
 
-<div class="container-narrow setup-section">
-  <div class="workshop-step">
-    <h2 class="mb-3">1. Check Node.js</h2>
-    <code class="workshop-code text-large">node --version</code>
-    <p class="text-muted mt-2">Must be v18 or higher</p>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-3">2. Install Claude Code</h2>
-    <code class="workshop-code text-large">npm i -g @anthropic-ai/claude-code</code>
-  </div>
-
-  <div class="workshop-step">
-    <h2 class="mb-3">3. Verify Installation</h2>
-    <code class="workshop-code text-large">claude-code --help</code>
-  </div>
+<div style="max-width: 800px; margin: 0 auto;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Check Node.js</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">node --version</code>
+        <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.875rem;">Must be v18 or higher</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+      </td>
+      <td style="padding-bottom: 1.5rem;">
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Install Claude Code</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">npm i -g @anthropic-ai/claude-code</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 50px; vertical-align: top; padding-right: 1rem;">
+        <div style="background: #2563eb; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+      </td>
+      <td>
+        <h3 style="margin: 0 0 0.5rem 0; font-size: 1.125rem;">Verify Installation</h3>
+        <code style="background: #f1f5f9; color: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; font-family: 'Fira Code', monospace; display: inline-block;">claude-code --help</code>
+      </td>
+    </tr>
+  </table>
 </div>
 
 
@@ -351,746 +452,369 @@ Let's get started.
 </h1>
 
 ---
-transition: slide-left
----
-
-<div class="section-label">HANDS-ON DEMO</div>
-
-<h1 class="mb-3">
-How This Works
-</h1>
-
-<div class="container-medium demo-section">
-  <div class="workflow-step">
-    <span class="step-number">1</span>
-    <div>
-      <h2 class="mb-1">Open Your Environment</h2>
-      <p class="text-muted">Open your code editor or terminal</p>
-    </div>
-  </div>
-  
-  <div class="workflow-step">
-    <span class="step-number">2</span>
-    <div>
-      <h2 class="mb-1">Follow the Commands</h2>
-      <p class="text-muted">Follow along with my screen</p>
-    </div>
-  </div>
-  
-  <div class="workflow-step">
-    <span class="step-number">3</span>
-    <div>
-      <h2 class="mb-1">Learn by Doing</h2>
-      <p class="text-muted">Build and learn together</p>
-    </div>
-  </div>
-</div>
-
-<div class="workshop-tip text-center mt-3">
-  Ready? Let's build something real.
-</div>
-
----
-transition: slide-up
----
-
-<div class="section-label">DEMO</div>
-
-<h1 class="mb-4">Step 1: Navigate to Your Projects</h1>
-
-<div class="container-wide demo-section">
-  <div class="terminal-output">
-    <p class="terminal-prompt">$ cd ~/Projects</p>
-    <p class="terminal-comment mb-3">Navigate to your projects folder</p>
-    
-    <p class="terminal-prompt">$ claude-code</p>
-    <p class="terminal-comment">Launch Claude Code in your terminal</p>
-  </div>
-  
-  <div class="workshop-tip mt-3">
-    <strong>Tip:</strong> Claude Code will ask for permission to access this folder
-  </div>
-</div>
-
----
-transition: slide-up
----
-
-<div class="section-label">DEMO</div>
-
-<h1 class="mb-4">Step 2: Trust the Folder</h1>
-
-<div class="container-wide demo-section">
-  <div class="workshop-checkpoint">
-    <h2 class="text-warning mb-2">⚠️ Claude Code Security Check</h2>
-    <p class="text-large mb-2">Do you trust the files in this folder?</p>
-    <p class="text-warning">With your permission Claude Code may execute files in this folder.</p>
-  </div>
-  
-  <div class="flex-center gap-3">
-    <div class="btn btn-success">
-      ✓ Yes, proceed
-    </div>
-    <div class="btn btn-disabled">
-      No, exit
-    </div>
-  </div>
-  
-  <p class="text-muted mt-3 text-center">
-    Choose "Yes, proceed" to continue
-  </p>
-</div>
-
----
-transition: slide-up
----
-
-<div class="section-label">DEMO</div>
-
-<h1 class="mb-4">What Just Happened?</h1>
-
-<div class="container-wide demo-section">
-  <div class="alert-success">
-    <h2 class="success-indicator mb-2">✓ Claude Code is now running!</h2>
-    <ul class="text-large" style="line-height: 1.8; list-style: none; padding: 0;">
-      <li class="mb-2">• Created a new project folder</li>
-      <li class="mb-2">• Claude Code has full access to this folder</li>
-      <li>• Ready to build your first app</li>
-    </ul>
-  </div>
-  
-  <p class="text-large text-center text-muted">
-    Now let's give Claude Code its first instruction...
-  </p>
-</div>
-
----
-transition: slide-up
----
-
-<div class="section-label">DEMO</div>
-
-<h1 class="mb-3">The Commands That Matter</h1>
-
-<div class="container-wide demo-section">
-  <div class="mb-3">
-    <h2 class="mb-2">Your First Claude Code Command:</h2>
-    <div class="follow-along-command">
-      Create a simple portfolio website with a home page, about page, and projects page. Use modern design.
-    </div>
-    <p class="text-muted">Type this exactly as shown and press Enter</p>
-  </div>
-
-  <div>
-    <h2 class="mb-2">What Claude Code Will Do:</h2>
-    <ul class="list-clean">
-      <li class="mb-1">🔨 Create folder structure</li>
-      <li class="mb-1">📄 Generate HTML/CSS files</li>
-      <li class="mb-1">🎨 Apply modern design</li>
-      <li>🚀 Set up for deployment</li>
-    </ul>
-  </div>
-</div>
-
----
-transition: slide-up
----
-
-<div class="section-label">DEMO</div>
-
-<h1 class="mb-3">Your Turn</h1>
-
-<div class="container-wide demo-section">
-  <div class="workshop-checkpoint text-center mb-3" style="background: #2563eb; color: white;">
-    <h2 class="mb-1">🚀 Let's Code Together!</h2>
-    <p class="text-medium">Follow along in your terminal now</p>
-  </div>
-
-  <div class="text-medium" style="line-height: 1.6;">
-    <p class="mb-2"><strong>Next Steps:</strong></p>
-    <ol style="padding-left: 1.5rem;">
-      <li class="mb-1">Type the command in your Claude Code terminal</li>
-      <li class="mb-1">Watch Claude Code build your portfolio</li>
-      <li>Ask questions if you get stuck</li>
-    </ol>
-  </div>
-
-  <div class="workshop-tip mt-3">
-    <strong>Tip:</strong> If Claude Code asks for permissions, always choose "Yes"
-  </div>
-</div>
-
----
-transition: slide-left
----
-
-<div class="section-label">CONTEXT WINDOWS</div>
-
-<h1 class="mb-4">
-Claude's Short-Term Memory
-</h1>
-
-<div class="feature-grid container-wide">
-  <div v-click class="workshop-card">
-    <div class="hero-icon">🧠</div>
-    <h2 class="mb-2">Like Your Working Memory</h2>
-    <p class="text-medium">
-      Claude can only "remember" what's in the current conversation
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <div class="hero-icon">📏</div>
-    <h2 class="mb-2">Limited Space</h2>
-    <p class="text-medium">
-      Once it's full, older information gets forgotten
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <div class="hero-icon">💰</div>
-    <h2 class="mb-2">Costs Money</h2>
-    <p class="text-medium">
-      More context = higher costs, so be efficient
-    </p>
-  </div>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CONTEXT WINDOWS</div>
-
-<h1 class="mb-3">
-The Goldilocks Problem
-</h1>
-
-<div class="container-wide">
-  <div v-click class="alert-warning">
-    <h2 class="mb-2">🔥 Too Much Information</h2>
-    <p class="text-medium">
-      Like trying to read 10 books at once - Claude gets overwhelmed
-    </p>
-  </div>
-  
-  <div v-click class="alert-warning">
-    <h2 class="mb-2">❄️ Too Little Information</h2>
-    <p class="text-medium">
-      Like trying to help someone without knowing what they need
-    </p>
-  </div>
-  
-  <div v-click class="alert-success">
-    <h2 class="mb-2">✨ Just Right</h2>
-    <p class="text-medium">
-      Give Claude exactly what it needs to solve the current problem
-    </p>
-  </div>
-</div>
-
----
-transition: fade
----
-
-<div class="section-label">CONTEXT WINDOWS</div>
-
-<h1 class="mb-3">
-Practical Tips for PMs
-</h1>
-
-<div class="container-wide">
-  <div v-click class="workshop-step">
-    <span class="step-number">1</span>
-    <div>
-      <h3 class="mb-1">Start Fresh When Stuck</h3>
-      <p class="text-muted">If Claude gets confused, exit and restart with clearer instructions</p>
-    </div>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">2</span>
-    <div>
-      <h3 class="mb-1">Be Specific</h3>
-      <p class="text-muted">"Fix the navbar" is better than "make the site better"</p>
-    </div>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">3</span>
-    <div>
-      <h3 class="mb-1">One Task at a Time</h3>
-      <p class="text-muted">Complete features before starting new ones</p>
-    </div>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">4</span>
-    <div>
-      <h3 class="mb-1">Reference Recent Work</h3>
-      <p class="text-muted">"Like the button we just made" helps Claude understand</p>
-    </div>
-  </div>
-</div>
-
----
 transition: slide-down
 layout: center
 ---
 
 <h1 class="hero-title-simple">
-Your AI Development Team
+What is Claude Code?
 </h1>
 
-<p class="subtitle text-center mt-4">
-Specialized AI agents that work for you
-</p>
 
 ---
-transition: slide-left
----
 
-<div class="section-label">SUB-AGENTS</div>
-
-<h1 class="mb-4">
-Think of It Like a Real Team
-</h1>
-
-<div class="feature-grid container-wide">
-  <div v-click class="workshop-card">
-    <div class="hero-icon">🤖</div>
-    <h2 class="mb-2">Frontend Developer</h2>
-    <p class="text-medium">
-      Specializes in UI, styling, and user interactions
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <div class="hero-icon">🔍</div>
-    <h2 class="mb-2">Code Reviewer</h2>
-    <p class="text-medium">
-      Finds bugs and suggests improvements
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <div class="hero-icon">🧪</div>
-    <h2 class="mb-2">Test Writer</h2>
-    <p class="text-medium">
-      Creates and runs tests to ensure quality
-    </p>
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.48.34.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">SUB-AGENTS</div>
-
-<h1 class="mb-4">
-Why This Changes Everything
-</h1>
-
-<div class="container-wide">
-  <div v-click class="workshop-card mb-3">
-    <h2 class="text-primary mb-2">🎯 One Agent, One Job</h2>
-    <p class="text-large">
-      Instead of one Claude doing everything, each agent becomes an expert at their specific task
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card mb-3">
-    <h2 class="text-primary mb-2">🚀 Work in Parallel</h2>
-    <p class="text-large">
-      Run multiple terminals with different agents - like having a whole dev team
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <h2 class="text-primary mb-2">🧠 You're the Manager</h2>
-    <p class="text-large">
-      Focus on what to build while your AI team handles how to build it
-    </p>
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.49.18.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">SUB-AGENTS</div>
-
-<h1 class="mb-4">
-Creating Your First Agent
-</h1>
-
-<div class="container-medium">
-  <div v-click class="follow-along mb-4">
-    <h3>Let's Create a Code Reviewer Agent</h3>
-    <div class="follow-along-command">
-      /agents
-    </div>
-    <p class="text-muted mt-2">Type this in Claude Code and press Enter</p>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">1</span>
-    <div>
-      <h3 class="mb-1">Choose: "Create new agent"</h3>
-      <p class="text-muted">Claude will guide you through the process</p>
-    </div>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">2</span>
-    <div>
-      <h3 class="mb-1">Name it: "code-reviewer"</h3>
-      <p class="text-muted">Keep names simple and descriptive</p>
-    </div>
-  </div>
-  
-  <div v-click class="workshop-step">
-    <span class="step-number">3</span>
-    <div>
-      <h3 class="mb-1">Let Claude generate the config</h3>
-      <p class="text-muted">It will create a specialized agent for code reviews</p>
-    </div>
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.51.33.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">SUB-AGENTS</div>
-
-<h1 class="mb-4">
-Using Your Agent
-</h1>
-
-<div class="container-wide">
-  <div v-click class="follow-along mb-4">
-    <h3>Ask Claude to Use Your Agent</h3>
-    <div class="follow-along-command">
-      Use the code-reviewer agent to check my code for issues
-    </div>
-  </div>
-  
-  <div v-click class="alert-success mb-3">
-    <h3 class="success-indicator">What Happens Next</h3>
-    <ul class="text-medium" style="list-style: none; padding: 0;">
-      <li class="mb-2">• Claude delegates the task to your specialized agent</li>
-      <li class="mb-2">• The agent reviews your entire codebase</li>
-      <li>• You get a detailed report of issues and improvements</li>
-    </ul>
-  </div>
-  
-  <div v-click class="workshop-tip">
-    <strong>Pro Tip:</strong> Agents remember their specialty - no need to re-explain what you want
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.53.13.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">SUB-AGENTS</div>
-
-<h1 class="mb-4">
-Practical Agent Examples
-</h1>
-
-<div class="grid-2 container-wide">
-  <div v-click class="workshop-card">
-    <h3 class="text-primary mb-2">🔍 Code Reviewer</h3>
-    <p class="text-medium">
-      "Review my code for bugs and security issues"
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <h3 class="text-primary mb-2">🧪 Test Writer</h3>
-    <p class="text-medium">
-      "Write tests for the shopping cart feature"
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <h3 class="text-primary mb-2">🐛 Bug Fixer</h3>
-    <p class="text-medium">
-      "Debug why the form isn't submitting"
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card">
-    <h3 class="text-primary mb-2">📝 Docs Writer</h3>
-    <p class="text-medium">
-      "Create API documentation for this service"
-    </p>
-  </div>
-</div>
-
-<div v-click class="workshop-tip mt-4 container-wide">
-  Each agent becomes an expert at their task - they get better the more you use them!
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.54.02.png)
 
 ---
-transition: slide-left
----
 
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-<h1 class="mb-4">
-From Idea to Live Website
-</h1>
-
-<p class="text-large mb-5 container-wide">
-Claude Code handles the technical stuff so you can focus on what to build
-</p>
-
-<div class="grid-3 container-full">
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">📝</div>
-    <h2 class="mb-1">You Describe</h2>
-    <p class="text-medium text-muted">"I need a landing page"</p>
-  </div>
-  
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">🤖</div>
-    <h2 class="mb-1">Claude Builds</h2>
-    <p class="text-medium text-muted">Creates and tests code</p>
-  </div>
-  
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">🌐</div>
-    <h2 class="mb-1">Goes Live</h2>
-    <p class="text-medium text-muted">Deployed to the web</p>
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.55.18.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-<h1 class="mb-4">
-The Magic: Claude Handles Git
-</h1>
-
-<div class="container-wide">
-  <div v-click class="follow-along mb-4">
-    <h3>Simple Command:</h3>
-    <div class="follow-along-command">
-      Please commit these changes
-    </div>
-  </div>
-  
-  <div v-click class="workshop-card mb-3">
-    <h3 class="text-primary mb-2">🤖 What Claude Does For You:</h3>
-    <ul class="text-large list-clean">
-      <li class="mb-2">• Reviews all your changes</li>
-      <li class="mb-2">• Writes a clear commit message</li>
-      <li class="mb-2">• Handles all the Git commands</li>
-      <li>• Pushes to GitHub automatically</li>
-    </ul>
-  </div>
-  
-  <div v-click class="workshop-tip">
-    <strong>No Git Knowledge Required!</strong> Just tell Claude what you did
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.56.16.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-<h1 class="mb-4">
-When Things Go Wrong
-</h1>
-
-<p class="text-large mb-4 container-wide">
-The secret: Don't fight it, just restart
-</p>
-
-<div class="grid-2 container-wide">
-  <div v-click class="alert-warning">
-    <h3 class="error-indicator mb-2">❌ Common Mistake</h3>
-    <p class="text-large">
-      Trying to fix Claude's errors by giving more instructions
-    </p>
-  </div>
-  
-  <div v-click class="alert-success">
-    <h3 class="success-indicator mb-2">✅ Smart Solution</h3>
-    <p class="text-large">
-      Exit (Ctrl+C) and start fresh with clearer instructions
-    </p>
-  </div>
-</div>
-
-<div v-click class="workshop-tip mt-4 container-wide">
-  <strong>Remember:</strong> Claude gets smarter with clear, focused requests
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.56.48.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-<h1 class="mb-4">
-Sharing Your Work
-</h1>
-
-<div class="container-wide">
-  <div v-click class="follow-along mb-4">
-    <h3>Create a Pull Request:</h3>
-    <div class="follow-along-command">
-      Create a pull request for these changes
-    </div>
-  </div>
-  
-  <div v-click class="alert-success">
-    <h3 class="success-indicator mb-2">Claude Creates Everything:</h3>
-    <ul class="text-large list-clean">
-      <li class="mb-2">• Professional PR description</li>
-      <li class="mb-2">• List of all changes made</li>
-      <li class="mb-2">• Test plan for reviewers</li>
-      <li>• Direct link to review</li>
-    </ul>
-  </div>
-  
-  <div v-click class="workshop-tip mt-4">
-    <strong>Pro Tip:</strong> Your team sees professional PRs without you learning Git!
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.57.07.png)
 
 ---
-transition: fade
----
 
-<div class="section-label">VERSION CONTROL & WORKFLOW</div>
-
-<h1 class="mb-4">
-Your Code Goes Live Instantly
-</h1>
-
-<p class="text-large mb-4 container-wide">
-Vercel makes deployment magical - no servers, no config, just URLs
-</p>
-
-<div class="feature-grid container-wide">
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">🔗</div>
-    <h3 class="mb-2">Connect Once</h3>
-    <p class="text-medium">
-      Link GitHub to Vercel in 2 clicks
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">👀</div>
-    <h3 class="mb-2">Preview Everything</h3>
-    <p class="text-medium">
-      Every change gets its own URL
-    </p>
-  </div>
-  
-  <div v-click class="workshop-card text-center">
-    <div class="hero-icon">⚡</div>
-    <h3 class="mb-2">Ship Instantly</h3>
-    <p class="text-medium">
-      Merge = Live in production
-    </p>
-  </div>
-</div>
-
-<div v-click class="workshop-checkpoint mt-4 container-wide">
-  <p class="text-large text-center mb-0">
-    <strong>No DevOps knowledge required!</strong> Vercel handles everything
-  </p>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.57.28.png)
 
 ---
-transition: slide-left
----
 
-<div class="section-label">HANDS-ON PRACTICE</div>
-
-<h1 class="mb-4">
-Let's Build Something Real!
-</h1>
-
-<div class="exercise-box">
-  <h3>Your Turn: Ship Your First Feature</h3>
-  
-  <ul class="list-clean text-large">
-    <li class="mb-2">☐ Add a new feature to your portfolio</li>
-    <li class="mb-2">☐ Commit your changes</li>
-    <li class="mb-2">☐ Create a pull request</li>
-    <li>☐ Share your live URL in the chat!</li>
-  </ul>
-</div>
-
-<div class="follow-along mt-4">
-  <h3>Need Ideas? Try These:</h3>
-  <ul class="text-large list-clean">
-    <li class="mb-2">• "Add a contact form to my portfolio"</li>
-    <li class="mb-2">• "Make the design more colorful"</li>
-    <li class="mb-2">• "Add animations to the buttons"</li>
-    <li>• "Create a blog section"</li>
-  </ul>
-</div>
-
+![](/Workshop%20images/workshop%202025-08-02%20at%2008.57.39.png)
 
 ---
-layout: center
-transition: slide-up
----
 
-<div class="hero-section">
-  <h1 class="hero-title-simple mb-4">
-    You're Now a<br/>
-    Technical PM
-  </h1>
-  
-  <p class="subtitle">
-    Go build something amazing.
-  </p>
-  
-  <div class="mt-5">
-    <p class="text-large text-muted">Questions?</p>
-  </div>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.07.27.png)
 
 ---
-layout: center
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.07.47.png)
+
 ---
 
-<div class="section-label">APPENDIX</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.08.21.png)
 
-<h1 class="mb-4">Design System Reference</h1>
+---
 
-<div class="container-medium">
-  <h3 class="text-primary mb-2">Workshop Components</h3>
-  <ul class="list-clean mb-4">
-    <li class="mb-1">• <code>.workshop-step</code> - Setup instructions</li>
-    <li class="mb-1">• <code>.workshop-checkpoint</code> - Important alerts</li>
-    <li class="mb-1">• <code>.follow-along</code> - Live coding sections</li>
-    <li>• <code>.workshop-tip</code> - Helpful hints</li>
-  </ul>
-  
-  <h3 class="text-primary mb-2">Container Utilities</h3>
-  <ul class="list-clean">
-    <li class="mb-1">• <code>.container-narrow</code> - 700px</li>
-    <li class="mb-1">• <code>.container-medium</code> - 800px</li>
-    <li class="mb-1">• <code>.container-wide</code> - 900px</li>
-    <li>• <code>.container-full</code> - 1200px</li>
-  </ul>
-</div>
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.12.24.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.12.48.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.17.09.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.17.45.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.20.11.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.20.22.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.21.06.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.21.51.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.24.04.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.26.18.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.27.05.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.27.14.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.27.33.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.46.32.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.58.37.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.58.51.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2009.59.03.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.00.15.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.01.14.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.01.30.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.01.49.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.02.31.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.03.03.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.03.21.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.04.24.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.06.42.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.07.25.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.09.17.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.13.16.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.13.24.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.13.56.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.15.01.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.15.30.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.15.38.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.16.15.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.17.32.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.18.05.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.18.11.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.18.45.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.19.04.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.40.31.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.40.38.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.43.24.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.44.17.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.52.43.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.55.34.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.56.37.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.56.47.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2010.58.11.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.00.32.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.00.48.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.02.38.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.05.29.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.18.35.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.18.43.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.19.10.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.22.11.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.23.47.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.33.09.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.35.32.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.35.58.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.45.37.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.46.35.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.48.23.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.50.55.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.51.21.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.52.02.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2011.52.36.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.00.19.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.04.11.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.05.01.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.05.42.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.06.14.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.09.03.png)
+
+---
+
+![](/Workshop%20images/workshop%202025-08-02%20at%2012.14.25.png)
 
 ---
